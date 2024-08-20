@@ -1,0 +1,50 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif, Arial;
+}
+
+/* Login Component */
+
+.walletContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* align-items: flex-start; */
+  /* align-self: stretch; */
+  height: 348px;
+}
+
+.walletItem {
+  display: flex;
+  padding: 0px 20px 0px 24px;
+  gap: 20px;
+  align-items: center;
+  /* align-self: stretch; */
+  height: 72px;
+  border-radius: 20px;
+  border: 0.7px solid #e3e3e3;
+  background-color: #fff;
+}
+
+.walletItem > h3 {
+  /* flex: 1 0 0; */
+  color: #252525;
+  font-size: 18px;
+  font-weight: 500;
+  /* line-height: 24px; */
+  letter-spacing: -0.2px;
+}
+
+.walletShow > h3 {
+  flex: 1 0 0;
+  color: #252525;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
