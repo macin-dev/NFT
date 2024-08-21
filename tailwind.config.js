@@ -19,6 +19,14 @@ export default {
         "light-surface-soft": "#F5F5F5",
       },
     },
+    screens: {
+      mobile: "375px",
+      tablet: "960px",
+      desktop: "1440px",
+    },
+    backgroundImage: {
+      "rectangle-login": "url('./assets/rectangle.jpeg')",
+    },
   },
   plugins: [],
 };

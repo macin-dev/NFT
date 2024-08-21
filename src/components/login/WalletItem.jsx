@@ -4,7 +4,7 @@ export const WalletItem = ({ name, logo }) => {
       <div>
         <img src={logo} alt={name} />
       </div>
-      <h3 className="text-light-element-primary text-lg leading-6 tracking-[-0.013rem] rounded-[1.25rem] border-light-border bg-white">
+      <h3 className="text-light-element-primary text-lg leading-6 tracking-[-0.013rem]">
         {name}
       </h3>
     </div>
