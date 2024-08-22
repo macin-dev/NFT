@@ -1,4 +1,4 @@
-import { DarkButton, Field, Headline, LightButton, Menu } from "./";
+import { DarkButton, Field, Headline, LightButton, Menu } from ".";
 
 export const EnterProfile = () => {
   return (

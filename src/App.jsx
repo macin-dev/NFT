@@ -1,4 +1,4 @@
-import { EnterProfile } from "./components/enter/EnterProfile";
+import { EnterProfile } from "./components";
 // import { Wallet } from "./components/login";
 import "./index.css";
 

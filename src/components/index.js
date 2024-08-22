@@ -1,2 +1,1 @@
-export * from "./login";
-export * from "./enter";
+export * from "./connectWallet";
