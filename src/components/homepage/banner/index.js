@@ -4,3 +4,5 @@ export * from "./ButtonContainer";
 export * from "./ImagesContainer";
 export * from "./ImageItem";
 export * from "./Title";
+export * from "./RedRectangle";
+export * from "./GreenRectangle";

@@ -11,8 +11,26 @@
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Inter, sans-serif, Arial;
+}
+
+.bg-green {
+  background: linear-gradient(
+    132deg,
+    rgba(60, 140, 244, 0.1) 17.25%,
+    rgba(39, 249, 152, 0.1) 59.58%,
+    rgba(206, 235, 32, 0.1) 101.91%
+  );
+}
+
+.bg-red {
+  background: linear-gradient(
+    132deg,
+    rgba(60, 140, 244, 0.2) 17.09%,
+    rgba(235, 32, 32, 0.2) 98.68%
+  );
 }
