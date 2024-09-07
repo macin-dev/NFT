@@ -32,7 +32,7 @@ export const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
   return (
-    <section className="embla tablet:px-20 desktop:max-w-[1440px] desktop:h-[320px]">
+    <section className="embla tablet:px-20 desktop:max-w-[90rem] desktop:h-[20rem]">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {images.map((item) => (
