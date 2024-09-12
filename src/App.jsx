@@ -1,4 +1,4 @@
-import { Container } from "./components/homepage/trending";
+import { Container } from "./components/homepage/details/Container";
 import "./index.css";
 
 export function ConnectWallet() {
