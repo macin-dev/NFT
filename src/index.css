@@ -35,6 +35,18 @@ body {
   );
 }
 
+.bg-cta__component {
+  background: var(
+    --Gradient-Background-1,
+    linear-gradient(
+      96deg,
+      rgba(31, 113, 235, 0.1) 1.53%,
+      rgba(225, 229, 19, 0.06) 50.32%,
+      rgba(20, 220, 88, 0.1) 99.12%
+    )
+  );
+}
+
 /* Embla Carousel */
 
 .embla {
