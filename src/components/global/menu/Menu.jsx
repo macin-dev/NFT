@@ -37,7 +37,7 @@ export const Menu = () => {
   }, []);
 
   return (
-    <div className="w-full py-3 px-4 flex justify-between items-center target:py-5 tablet:px-10 desktop:px-20">
+    <header className="w-full py-3 px-4 flex justify-between items-center tablet:w-[60rem] tablet:py-5 tablet:px-10 desktop:px-20 desktop:w-[90rem] mx-auto">
       {menu === "mobile" ? (
         <Mobile />
       ) : menu === "tablet" ? (
@@ -45,6 +45,6 @@ export const Menu = () => {
       ) : (
         <Desktop />
       )}
-    </div>
+    </header>
   );
 };

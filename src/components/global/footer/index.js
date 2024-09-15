@@ -1,4 +1,4 @@
-export * from "./Container";
+export * from "./Footer";
 export * from "./Explore";
 export * from "./Group";
 export * from "./Suscribe";

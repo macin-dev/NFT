@@ -8,7 +8,7 @@ export const Explore = () => {
       </div>
 
       <div className="flex flex-row flex-wrap gap-y-10 self-stretch tablet:w-[35.3125rem] tablet:gap-0 tablet:justify-start">
-        <Group title="Marketp" text1="Explore" text2="Jobs" text3="Help" />
+        <Group title="Marketplace" text1="Explore" text2="Jobs" text3="Help" />
 
         <Group title="Links" text1="API" text2="Token" text3="Branding" />
 
