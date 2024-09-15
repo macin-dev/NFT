@@ -1,4 +1,4 @@
-import { Container } from "./components/homepage/cta/Container";
+import { Container } from "./components/global/footer";
 import "./index.css";
 
 export function ConnectWallet() {
