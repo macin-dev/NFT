@@ -94,7 +94,7 @@ body {
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.7) 99.85%
     ),
-    url("./assets/slide/S1.jpeg") lightgray 50% / cover no-repeat;
+    url("./assets/slide/S1.png") lightgray 50% / cover no-repeat;
   background-position: center;
 }
 
@@ -104,7 +104,7 @@ body {
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.7) 99.85%
     ),
-    url("./assets/slide/S2.jpeg") lightgray 50% / cover no-repeat;
+    url("./assets/slide/S2.png") lightgray 50% / cover no-repeat;
   background-position: top;
 }
 
@@ -114,7 +114,7 @@ body {
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.7) 99.85%
     ),
-    url("./assets/slide/S3.jpeg") lightgray 50% / cover no-repeat;
+    url("./assets/slide/S3.png") lightgray 50% / cover no-repeat;
   background-position: top;
 }
 
@@ -124,7 +124,7 @@ body {
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.7) 99.85%
     ),
-    url("./assets/slide/S4.jpeg") lightgray 50% / cover no-repeat;
+    url("./assets/slide/S4.png") lightgray 50% / cover no-repeat;
   background-position: center;
 }
 
