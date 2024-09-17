@@ -1,13 +1,21 @@
+import { useState } from "react";
 import { Card } from "../../global/nftcard/Card";
+import { Filter } from "../filter";
 import { Explore, Options, Tab } from "./";
 import { images } from "./data";
 
 export const NFT = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const onToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
-    <section className="flex flex-col w-mobile p-4 gap-4">
+    <section className="flex flex-col w-mobile p-4 gap-4 mx-auto">
       <Explore />
       <Tab />
-      <Options />
+      <Options onToggle={onToggle} />
 
       <div className="flex flex-col py-6 gap-3">
         <div className="flex flex-wrap gap-3">
@@ -26,6 +34,8 @@ export const NFT = () => {
           ))}
         </div>
       </div>
+
+      {toggle && <Filter onToggle={onToggle} />}
     </section>
   );
 };

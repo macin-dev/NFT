@@ -195,3 +195,8 @@ body {
     z-index: 99;
   }
 }
+
+/* Background transparent dark */
+.bg-transparent-dark {
+  background: rgba(0, 0, 0, 0.3);
+}
