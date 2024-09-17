@@ -17,11 +17,11 @@ export const typesOpt = [
   },
   {
     name: "Avalanche",
-    url: "./assets/icons/solana-icon.svg",
+    url: "./assets/icons/avalanche-icon.svg",
   },
   {
     name: "Solana",
-    url: "./assets/icons/ethereum-icon.svg",
+    url: "./assets/icons/solana-icon.svg",
   },
 ];
 
