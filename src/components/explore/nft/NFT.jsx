@@ -6,9 +6,23 @@ import { images } from "./data";
 
 export const NFT = () => {
   const [toggle, setToggle] = useState(false);
+  const [dropdown, setDropdown] = useState({
+    blockchain: false,
+    status: false,
+    price: false,
+    category: false,
+    collections: false,
+  });
 
   const onToggle = () => {
     setToggle(!toggle);
+  };
+
+  const onDropdown = (type) => {
+    setDropdown({
+      ...dropdown,
+      [type]: !dropdown[type],
+    });
   };
 
   return (
@@ -35,7 +49,13 @@ export const NFT = () => {
         </div>
       </div>
 
-      {toggle && <Filter onToggle={onToggle} />}
+      {toggle && (
+        <Filter
+          onToggle={onToggle}
+          onDropdown={onDropdown}
+          dropdown={dropdown}
+        />
+      )}
     </section>
   );
 };
