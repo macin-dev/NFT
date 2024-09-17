@@ -18,6 +18,14 @@ export default {
         "light-surface-medium": "#E3E3E3",
         "light-surface-soft": "#F5F5F5",
       },
+      width: {
+        mobile: "23.4375rem",
+        tablet: "60rem",
+        desktop: "90rem",
+      },
+      letterSpacing: {
+        default: "-0.0125rem",
+      },
     },
     screens: {
       mobile: "375px",

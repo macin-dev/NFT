@@ -1,4 +1,5 @@
-import { List, Theme, Search } from "./";
+import { Search } from "../search";
+import { List, Theme } from "./";
 
 export const Desktop = () => {
   return (
@@ -11,7 +12,9 @@ export const Desktop = () => {
         <List />
       </div>
 
-      <Search />
+      <div className="w-[26.625rem]">
+        <Search placeholder="Type for collections, NFTs etc" />
+      </div>
 
       <div className="flex items-center gap-4 flex-grow shrink-0 justify-end">
         <button className="flex items-center justify-center h-11 py-3 px-5 rounded-xl tracking-[-0.013rem] text-sm bg-light-element-primary-btn text-white">
