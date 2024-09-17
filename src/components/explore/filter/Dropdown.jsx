@@ -1,4 +1,6 @@
-import { Type } from "./Type";
+import { Blockchain } from "./Blockchain";
+import { Category } from "./Category";
+import { Status } from "./Status";
 
 export const Dropdown = ({ type, onDropdown, dropdown }) => {
   const option = type.toLowerCase();
@@ -17,17 +19,9 @@ export const Dropdown = ({ type, onDropdown, dropdown }) => {
         </button>
       </div>
 
-      {dropdown && (
-        <>
-          <Type blockchain="Ethereum" url="./assets/icons/ethereum-icon.svg" />
-          <Type blockchain="BNB Chain" url="./assets/icons/bnb-icon.svg" />
-          <Type
-            blockchain="Avalanche"
-            url="./assets/icons/avalanche-icon.svg"
-          />
-          <Type blockchain="Solana" url="./assets/icons/solana-icon.svg" />
-        </>
-      )}
+      {dropdown && option === "blockchain" && <Blockchain />}
+      {dropdown && option === "status" && <Status />}
+      {dropdown && option === "category" && <Category />}
     </>
   );
 };

@@ -26,7 +26,11 @@ export const NFT = () => {
   };
 
   return (
-    <section className="flex flex-col w-mobile p-4 gap-4 mx-auto">
+    <section
+      className={`flex flex-col w-mobile p-4 gap-4 relative mx-auto ${
+        toggle ? "h-screen overflow-hidden" : ""
+      }`}
+    >
       <Explore />
       <Tab />
       <Options onToggle={onToggle} />
