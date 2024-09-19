@@ -1,11 +1,3 @@
-export const blockchainOpt = [
-  "Blockchain",
-  "Status",
-  "Price",
-  "Category",
-  "Collections",
-];
-
 export const typesOpt = [
   {
     name: "Ethereum",

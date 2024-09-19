@@ -1,18 +1,24 @@
+import { Dropdown } from "../../global/dropdown/Dropdown";
 import { Search } from "../../global/search";
+import { Layout } from "./Layout";
 
 export const Options = ({ onToggle }) => {
   return (
     <div className="flex gap-3 self-stretch">
       <Search placeholder="Search" />
-      <button
-        onClick={onToggle}
-        className="flex w-12 h-12 p-4 rounded-xl bg-light-surface-soft"
-      >
-        <img src="./assets/icons/sliders.svg" alt="Icon menu" />
-      </button>
-      <button className="flex w-12 h-12 p-4 rounded-xl bg-light-surface-soft">
-        <img src="./assets/icons/filter.svg" alt="Icon for filtering" />
-      </button>
+      <Dropdown
+        value="Filters"
+        url="./assets/icons/sliders.svg"
+        onToggle={onToggle}
+      />
+
+      <Dropdown
+        value="Trending"
+        url="./assets/icons/filter.svg"
+        onToggle={onToggle}
+      />
+
+      <Layout />
     </div>
   );
 };

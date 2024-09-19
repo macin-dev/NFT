@@ -1,13 +1,9 @@
-import { Blockchain } from "./Blockchain";
-import { Category } from "./Category";
-import { Status } from "./Status";
-
-export const Dropdown = ({ type, onDropdown, dropdown }) => {
+export const Dropdown = ({ type, onDropdown, dropdown, children }) => {
   const option = type.toLowerCase();
 
   return (
     <>
-      <div className="flex justify-between items-center py-4 self-stretch">
+      <div className="flex justify-between items-center py-4 self-stretch tablet:px-5">
         <h3 className="text-light-element-primary text-lg leading-6 tracking-default font-medium">
           {type}
         </h3>
@@ -19,9 +15,7 @@ export const Dropdown = ({ type, onDropdown, dropdown }) => {
         </button>
       </div>
 
-      {dropdown && option === "blockchain" && <Blockchain />}
-      {dropdown && option === "status" && <Status />}
-      {dropdown && option === "category" && <Category />}
+      {dropdown && <>{children}</>}
     </>
   );
 };

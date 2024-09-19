@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "../../global/nftcard/Card";
-import { Filter } from "../filter";
+import { Container, Filter } from "../filter";
 import { Explore, Options, Tab } from "./";
 import { images } from "./data";
 
@@ -27,17 +27,23 @@ export const NFT = () => {
 
   return (
     <section className={`relative ${toggle ? "h-screen overflow-hidden" : ""}`}>
-      <div className="flex flex-col w-mobile p-4 gap-4 mx-auto">
-        <Explore />
-        <Tab />
-        <Options onToggle={onToggle} />
+      <div className="flex flex-col w-mobile mx-auto tablet:w-tablet">
+        <div className="flex flex-col items-start p-4 gap-4 tablet:py-6 tablet:px-10">
+          <Explore />
+          <Tab />
+          <Options onToggle={onToggle} />
+        </div>
 
-        <div className="flex flex-col py-6 gap-3">
-          <div className="flex flex-wrap gap-3">
+        <div className="flex flex-col py-6 px-4 gap-3 tablet:flex-row tablet:items-start tablet:py-0 tablet:px-10 tablet:pb-10 tablet:gap-8">
+          <div className="hidden tablet:block">
+            <Container dropdown={dropdown} onDropdown={onDropdown} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 tablet:flex-grow tablet:gap-x-3 tablet:gap-y-4">
             {images.map((image, i) => (
               <div
                 key={i}
-                className="flex-grow shrink-0 w-[10.3125rem] h-[15.625rem]"
+                className="w-[10.3125rem] h-[15.625rem] tablet:w-[16.875rem] tablet:h-[17.5rem]"
               >
                 <Card
                   url={image.url}
