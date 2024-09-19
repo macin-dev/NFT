@@ -1,34 +1,35 @@
-import { useState } from "react";
 import { categoryOpt } from "./data";
-import { Option } from "./Option";
+import { Selected, Unselected } from "../../global/filters";
+import { useDropdown } from "../helper/useDropdown";
 
 export const Category = () => {
-  const [selected, setSelected] = useState({
+  const { selected, handleSelected } = useDropdown({
     opt_1: false,
     opt_2: false,
     opt_3: false,
     opt_4: false,
-    all: false,
+    opt_5: false,
   });
 
-  const handleSelected = (opt) => {
-    setSelected((prev) => ({
-      ...prev,
-      [opt]: !selected[opt],
-    }));
-  };
-
   return (
-    <>
-      {categoryOpt.map((c, i) => (
-        <Option
-          key={c}
-          value={c}
-          onSelected={handleSelected}
-          select={`opt_${i + 1}`}
-          isSelected={selected[`opt_${i + 1}`]}
-        />
-      ))}
-    </>
+    <div className="flex flex-col px-2 gap-1 self-stretch">
+      {categoryOpt.map((c, i) =>
+        selected[`opt_${i + 1}`] ? (
+          <Selected
+            key={c}
+            value={c}
+            onSelected={handleSelected}
+            select={`opt_${i + 1}`}
+          />
+        ) : (
+          <Unselected
+            key={c}
+            value={c}
+            onSelected={handleSelected}
+            select={`opt_${i + 1}`}
+          />
+        )
+      )}
+    </div>
   );
 };

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export const useDropdown = ({ initialValues }) => {
-  const [selected, setSelected] = useState(initialValues);
+export const useDropdown = ({ ...lists }) => {
+  const [selected, setSelected] = useState(lists);
 
   const handleSelected = (opt) => {
     setSelected((prev) => ({
@@ -9,8 +9,6 @@ export const useDropdown = ({ initialValues }) => {
       [opt]: !selected[opt],
     }));
   };
-
-  console.log(initialValues);
 
   return {
     selected,

@@ -1,6 +1,5 @@
-import { Blockchain, Category, Status } from "./";
+import { Blockchain, Category, Status, Price, Dropdown } from "./";
 import { Dbutton_active_lg } from "./dark/Dbutton_active_lg";
-import { Dropdown } from "./Dropdown";
 import { Wbutton_active_lg } from "./white/Wbutton_active_lg";
 
 export const Container = ({ onDropdown, dropdown }) => {
@@ -27,7 +26,9 @@ export const Container = ({ onDropdown, dropdown }) => {
           type="Price"
           onDropdown={onDropdown}
           dropdown={dropdown["price"]}
-        ></Dropdown>
+        >
+          <Price />
+        </Dropdown>
 
         <Dropdown
           type="Category"
@@ -44,10 +45,12 @@ export const Container = ({ onDropdown, dropdown }) => {
         ></Dropdown>
       </div>
 
-      <div className="tablet:hidden flex flex-col gap-2 self-stretch">
-        <Wbutton_active_lg value="Clear" />
-        <Dbutton_active_lg value="Apply" />
-      </div>
+      {window.innerWidth < 960 && (
+        <div className="tablet:hidden flex flex-col gap-2 self-stretch">
+          <Wbutton_active_lg value="Clear" />
+          <Dbutton_active_lg value="Apply" />
+        </div>
+      )}
     </div>
   );
 };
