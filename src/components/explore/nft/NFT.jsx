@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { Card } from "../../global/nftcard/Card";
 import { Container, Filter } from "../filter";
-import { Explore, Options, Tab } from "./";
-import { images } from "./data";
+import { Explore, Grid_default, HorizontalLayout, Options, Tab } from "./";
 
 export const NFT = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,43 +25,35 @@ export const NFT = () => {
 
   return (
     <section className={`relative ${toggle ? "h-screen overflow-hidden" : ""}`}>
-      <div className="flex flex-col w-mobile mx-auto tablet:w-tablet">
-        <div className="flex flex-col items-start p-4 gap-4 tablet:py-6 tablet:px-10">
+      <div className="flex flex-col w-mobile mx-auto tablet:w-tablet desktop:w-desktop self-stretch">
+        <div className="flex flex-col items-start p-4 gap-4 tablet:py-6 tablet:px-10 desktop:py-10 desktop:px-20 self-stretch">
           <Explore />
-          <Tab />
-          <Options onToggle={onToggle} />
+
+          {window.innerWidth < 1440 ? (
+            <>
+              <Tab />
+              <Options onToggle={onToggle} />
+            </>
+          ) : (
+            <HorizontalLayout />
+          )}
         </div>
 
-        <div className="flex flex-col py-6 px-4 gap-3 tablet:flex-row tablet:items-start tablet:py-0 tablet:px-10 tablet:pb-10 tablet:gap-8">
+        <div className="flex flex-col py-6 px-4 gap-3 tablet:flex-row tablet:items-start tablet:py-0 tablet:px-10 tablet:pb-10 tablet:gap-8 desktop:px-20 desktop:pb-20">
           <div className="hidden tablet:block">
             <Container dropdown={dropdown} onDropdown={onDropdown} />
           </div>
 
-          <div className="grid grid-cols-2 gap-3 tablet:flex-grow tablet:gap-x-3 tablet:gap-y-4">
-            {images.map((image, i) => (
-              <div
-                key={i}
-                className="w-[10.3125rem] h-[15.625rem] tablet:w-[16.875rem] tablet:h-[17.5rem]"
-              >
-                <Card
-                  url={image.url}
-                  userName="Winter Madagascar"
-                  text="Clown Ape"
-                  price="0.002ETH"
-                />
-              </div>
-            ))}
-          </div>
+          <Grid_default />
         </div>
-
-        {toggle && (
-          <Filter
-            onToggle={onToggle}
-            onDropdown={onDropdown}
-            dropdown={dropdown}
-          />
-        )}
       </div>
+      {toggle && (
+        <Filter
+          onToggle={onToggle}
+          onDropdown={onDropdown}
+          dropdown={dropdown}
+        />
+      )}
     </section>
   );
 };

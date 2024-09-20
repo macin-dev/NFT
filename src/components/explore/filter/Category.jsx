@@ -1,6 +1,6 @@
 import { categoryOpt } from "./data";
 import { Selected, Unselected } from "../../global/filters";
-import { useDropdown } from "../helper/useDropdown";
+import { useDropdown } from "../hooks/useDropdown";
 
 export const Category = () => {
   const { selected, handleSelected } = useDropdown({

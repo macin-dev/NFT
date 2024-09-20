@@ -4,7 +4,7 @@ export const Layout = () => {
       {Array.from({ length: 3 }, (_, index) => (
         <button
           key={index}
-          className="flex items-center justify-center gap-2.5 p-2.5 rounded-xl shadow-sm bg-white"
+          className="bg-white flex items-center justify-center gap-2.5 p-2.5 rounded-xl shadow-sm desktop:w-12 desktop:h-12 desktop:py-3 desktop:px-4"
         >
           <div className="flex items-center justify-center">
             <img
