@@ -6,7 +6,8 @@
 // import { Card } from "./components/homepage/card";
 // import { CTA } from "./components/homepage/cta";
 // import { Footer } from "./components/global/footer";
-import { NFT } from "./components/explore/nft";
+// import { NFT } from "./components/explore/nft";
+import { Container } from "./components/collections/";
 import "./index.css";
 
 export function ConnectWallet() {
@@ -20,7 +21,8 @@ export function ConnectWallet() {
       <Card />
       <CTA />
       <Footer /> */}
-      <NFT />
+      {/* <NFT /> */}
+      <Container />
     </>
   );
 }

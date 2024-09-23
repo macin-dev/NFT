@@ -48,6 +48,29 @@ body {
   );
 }
 
+/* Collection Carousel */
+
+.embla-collection {
+  max-width: 100%;
+  margin: auto;
+  --slide-spacing-col: 0.75rem;
+  --slide-size-col: 232px;
+}
+.embla__viewport-collection {
+  overflow: hidden;
+}
+.embla__container-collection {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing-col) * -1);
+}
+.embla__slide-collection {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size-col);
+  min-width: 0;
+  padding-left: var(--slide-spacing-col);
+}
+
 /* Embla Carousel */
 
 .embla {
