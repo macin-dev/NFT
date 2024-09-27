@@ -1,3 +1,4 @@
+import { BlackButton_lg } from "../button/BlackButton_lg";
 import { Search } from "../search";
 import { List, Theme } from "./";
 
@@ -16,10 +17,8 @@ export const Desktop = () => {
         <Search placeholder="Type for collections, NFTs etc" />
       </div>
 
-      <div className="flex items-center gap-4 flex-grow shrink-0 justify-end">
-        <button className="flex items-center justify-center h-11 py-3 px-5 rounded-xl tracking-[-0.013rem] text-sm bg-light-element-primary-btn text-white">
-          Connect Wallet
-        </button>
+      <div className="inline-flex items-center gap-4 flex-grow shrink-0 justify-end">
+        <BlackButton_lg value="Connect Wallet" />
 
         <div className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft">
           <img src="./assets/icons/shopping-bag.svg" alt="shopping bag icon" />

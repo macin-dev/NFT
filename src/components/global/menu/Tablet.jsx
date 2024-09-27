@@ -1,3 +1,4 @@
+import { BlackButton_lg } from "../button";
 import { List, Theme } from "./";
 
 export const Tablet = () => {
@@ -16,9 +17,7 @@ export const Tablet = () => {
           <img src="./assets/icons/search.svg" alt="search icon" />
         </div>
 
-        <button className="flex items-center justify-center h-12 py-3 px-5 rounded-xl tracking-[-0.013rem] text-sm bg-light-element-primary-btn text-white">
-          Connect Wallet
-        </button>
+        <BlackButton_lg value="Connect Wallet" />
 
         <div className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft">
           <img src="./assets/icons/shopping-bag.svg" alt="shopping bag icon" />

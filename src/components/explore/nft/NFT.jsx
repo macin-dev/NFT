@@ -1,9 +1,16 @@
 import { useState } from "react";
-import { Container, Filter } from "../filter";
-import { Explore, Grid_default, HorizontalLayout, Options, Tab } from "./";
+import { Filter } from "../filter";
+import { Explore, HorizontalLayout, NFTSection, Options, Tab } from "./";
+import { Container } from "../../collections";
+import { UserSection } from "../../user";
 
 export const NFT = () => {
   const [toggle, setToggle] = useState(false);
+  const [tabs, setTabs] = useState({
+    tab1: true,
+    tab2: false,
+    tab3: false,
+  });
   const [dropdown, setDropdown] = useState({
     blockchain: false,
     status: false,
@@ -23,6 +30,15 @@ export const NFT = () => {
     });
   };
 
+  const handleTabs = (tab) => {
+    setTabs({
+      tab1: false,
+      tab2: false,
+      tab3: false,
+      [tab]: true,
+    });
+  };
+
   return (
     <section className={`relative ${toggle ? "h-screen overflow-hidden" : ""}`}>
       <div className="flex flex-col w-mobile mx-auto tablet:w-tablet desktop:w-desktop self-stretch">
@@ -31,21 +47,21 @@ export const NFT = () => {
 
           {window.innerWidth < 1440 ? (
             <>
-              <Tab />
+              <Tab tabs={tabs} onTabs={handleTabs} />
               <Options onToggle={onToggle} />
             </>
           ) : (
-            <HorizontalLayout />
+            <HorizontalLayout tabs={tabs} onTabs={handleTabs} />
           )}
         </div>
 
-        <div className="flex flex-col py-6 px-4 gap-3 tablet:flex-row tablet:items-start tablet:py-0 tablet:px-10 tablet:pb-10 tablet:gap-8 desktop:px-20 desktop:pb-20">
-          <div className="hidden tablet:block">
-            <Container dropdown={dropdown} onDropdown={onDropdown} />
-          </div>
+        {tabs.tab1 && (
+          <NFTSection dropdown={dropdown} onDropdown={onDropdown} />
+        )}
 
-          <Grid_default />
-        </div>
+        {tabs.tab2 && <Container />}
+
+        {tabs.tab3 && <UserSection />}
       </div>
       {toggle && (
         <Filter

@@ -2,7 +2,7 @@ import { Dropdown_lg } from "../../global/dropdown";
 import { Search } from "../../global/search";
 import { Tab, Layout } from "./";
 
-export const HorizontalLayout = () => {
+export const HorizontalLayout = ({ tabs, onTabs }) => {
   return (
     <div className="flex gap-4 self-stretch">
       <Dropdown_lg
@@ -11,7 +11,7 @@ export const HorizontalLayout = () => {
         alt="Filtering icon to display a menu of options"
       />
 
-      <Tab />
+      <Tab tabs={tabs} onTabs={onTabs} />
 
       <Search placeholder="Type for NFTs" />
 
