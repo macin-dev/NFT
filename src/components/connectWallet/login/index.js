@@ -1,4 +1,4 @@
-export * from "./walletItem";
+export * from "./WalletItem";
 export * from "./Wallet";
 export * from "./Tab";
 export * from "./WalletOptions";
