@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BlackButton_md } from "../global/button/BlackButton_md";
 
 export const Info = () => {
@@ -6,9 +7,12 @@ export const Info = () => {
       <div className="flex justify-between items-center self-stretch">
         <div className="flex flex-col gap-2 items-start flex-grow shrink-0 basis-0">
           <div className="flex items-center gap-2">
-            <p className="text-light-element-primary text-sm font-medium tracking-default">
+            <Link
+              to="/user"
+              className="text-light-element-primary text-sm font-medium tracking-default"
+            >
               Winter Madagascar
-            </p>
+            </Link>
             <img src="./assets/icons/verify.svg" alt="Verify Icon" />
           </div>
 
