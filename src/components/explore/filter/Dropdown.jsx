@@ -11,7 +11,7 @@ export const Dropdown = ({ type, onDropdown, dropdown, children }) => {
           onClick={() => onDropdown(option)}
           className="flex justify-center items-center p-1 w-6 h-6 rounded-lg bg-light-surface-medium"
         >
-          <img src="./assets/icons/chevron-down.svg" alt="Select icon" />
+          <img src="/assets/icons/chevron-down.svg" alt="Select icon" />
         </button>
       </div>
 

@@ -1,21 +1,21 @@
 import { BlackButton_lg } from "../../global/button";
 import { Image } from "./Image";
 
-export const Profile = () => {
+export const Profile = ({ username, urlAvatar, bgURL }) => {
   return (
     <section className="flex flex-col w-mobile tablet:w-tablet desktop:w-desktop">
-      <Image />
+      <Image urlAvatar={urlAvatar} bgURL={bgURL} />
 
       <div className="pt-14 px-4 pb-6 flex flex-col tablet:pt-20 tablet:px-10 desktop:px-20 desktop:pt-20">
         <div className="flex flex-col gap-6 self-stretch tablet:items-start">
           <div className="flex justify-between items-start self-stretch tablet:order-first">
             <div className="flex gap-2 items-center">
               <h2 className="text-light-element-primary text-[1.5rem] font-semibold leading-7 tracking-[-0.0625rem] tablet:text-[2rem] tablet:leading-10">
-                Jack Krauser
+                {username}
               </h2>
               <img
                 className="w-6 h-6"
-                src="./assets/icons/verify.svg"
+                src="/assets/icons/verify.svg"
                 alt="Verify Icon"
               />
             </div>
@@ -23,7 +23,7 @@ export const Profile = () => {
             <div className="bg-light-surface-secondary-btn flex items-center justify-center p-2 rounded-[0.625rem]">
               <img
                 className="w-4 h-4"
-                src="./assets/icons/more-vertical.svg"
+                src="/assets/icons/more-vertical.svg"
                 alt="Icon"
               />
             </div>

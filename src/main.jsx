@@ -21,7 +21,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="explore" element={<NFT />}></Route>
         <Route path="collection" element={<Header />} />
-        <Route path="user" element={<Layout />} />
+        <Route path="user/:userID" element={<Layout />} />
         <Route path="nft-detail" element={<Details />} />
       </Route>
       <Route path="sing-up" element={<Wallet />} />

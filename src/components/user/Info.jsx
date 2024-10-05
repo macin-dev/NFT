@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import { BlackButton_md } from "../global/button/BlackButton_md";
 
-export const Info = () => {
+export const Info = ({ userID, username }) => {
   return (
     <div className="flex flex-col pt-6 px-3 pb-4 self-stretch">
       <div className="flex justify-between items-center self-stretch">
         <div className="flex flex-col gap-2 items-start flex-grow shrink-0 basis-0">
           <div className="flex items-center gap-2">
             <Link
-              to="/user"
+              to={`/user/${userID}`}
               className="text-light-element-primary text-sm font-medium tracking-default"
             >
-              Winter Madagascar
+              {username}
             </Link>
             <img src="./assets/icons/verify.svg" alt="Verify Icon" />
           </div>
