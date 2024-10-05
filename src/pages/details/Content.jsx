@@ -1,4 +1,4 @@
-export const Content = () => {
+export const Content = ({ token }) => {
   return (
     <div className="w-mobile flex flex-col gap-12 items-center mx-auto tablet:w-tablet tablet:px-10 tablet:pb-[3.75rem] tablet:items-start desktop:w-desktop desktop:px-[11.8125rem]">
       <div className="flex flex-col items-start gap-4 px-4 tablet:px-0 tablet:w-[26.5rem]">
@@ -47,7 +47,7 @@ export const Content = () => {
               Token Standard
             </p>
             <p className="text-light-element-primary text-sm tracking-default">
-              89324JKK
+              {token}
             </p>
           </div>
 

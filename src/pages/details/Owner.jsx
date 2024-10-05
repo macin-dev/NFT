@@ -4,7 +4,7 @@ export const Owner = () => {
       <div className="flex items-center gap-1">
         <img
           className="w-4 h-4"
-          src="./assets/icons/verify.svg"
+          src="/assets/icons/verify.svg"
           alt="Verify Icon"
         />
         <p className="text-light-element-secondary text-sm tracking-default">

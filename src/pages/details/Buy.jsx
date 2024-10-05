@@ -26,7 +26,7 @@ export const Buy = () => {
       <div className="flex flex-col gap-3 self-stretch">
         <div className="flex gap-3 self-stretch">
           <BlackButton_xl value="Buy now" grow="flex-grow" />
-          <BlackButton_xl icon="./assets/icons/plus.svg" />
+          <BlackButton_xl icon="/assets/icons/plus.svg" />
         </div>
 
         <button className="h-[3.125rem] flex items-center justify-center py-3.5 self-stretch">
