@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BlackButton_lg } from "../button";
 import { List, Theme } from "./";
 
@@ -5,9 +6,9 @@ export const Tablet = () => {
   return (
     <>
       <div className="flex items-center gap-6 flex-grow shrink-0">
-        <div>
+        <Link to="/">
           <img src="/assets/Union.svg" alt="Ultrarare Logo" />
-        </div>
+        </Link>
         <div className="w-[0.063rem] h-4 bg-light-border"></div>
         <List />
       </div>

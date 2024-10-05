@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 export const Mobile = () => {
   return (
     <>
       <div className="flex items-center gap-6">
-        <img src="/assets/icons/shortLogo.svg" alt="Logo Ultrarare" />
+        <Link to="/">
+          <img src="/assets/icons/shortLogo.svg" alt="Logo Ultrarare" />
+        </Link>
         <img src="/assets/icons/search.svg" alt="Search icon" />
       </div>
       <div className="flex items-center gap-4">
