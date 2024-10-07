@@ -13,6 +13,7 @@ import { Wallet } from "./components/connectWallet/login/index.js";
 import { Header } from "./components/collections/header/Header.jsx";
 import { Layout } from "./components/user/Layout.jsx";
 import { Details } from "./pages/details/Details.jsx";
+import { Main } from "./pages/create/index.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         <Route path="collection" element={<Header />} />
         <Route path="user/:userID" element={<Layout />} />
         <Route path="nft-detail/:itemID" element={<Details />} />
+        <Route path="create" element={<Main />} />
       </Route>
       <Route path="sing-up" element={<Wallet />} />
     </>
