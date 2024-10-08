@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export const SwitchToggle = () => {
-  const [toggle, setToggle] = useState(false);
+export const SwitchToggle = ({ switchToggle = false }) => {
+  const [toggle, setToggle] = useState(switchToggle);
 
   return (
     <label className="inline-block relative w-[2.875rem] h-6">
