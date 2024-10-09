@@ -9,3 +9,5 @@ export * from "./UnlockableTitle";
 export * from "./MarketPlaceOptions";
 export * from "./Form";
 export * from "./ButtonContainer";
+export * from "./UploadOff";
+export * from "./UploadOn";
