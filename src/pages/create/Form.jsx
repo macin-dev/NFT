@@ -4,7 +4,7 @@ import { InputUpload, MarketPlaceOptions, Unlockable } from ".";
 
 export const Form = () => {
   return (
-    <div className="flex flex-col gap-10 self-stretch">
+    <div className="flex flex-col gap-10 self-stretch tablet:items-end">
       <InputUpload />
       <InputText value="name" />
       <TextArea value="description" />

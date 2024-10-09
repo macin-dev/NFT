@@ -9,7 +9,7 @@ export const InputUpload = () => {
   };
 
   return (
-    <div className="flex flex-col items-start gap-1 h-[20rem] self-stretch">
+    <div className="flex flex-col items-start gap-1 h-[20rem] self-stretch tablet:h-[37.3125rem]">
       <h3 className="text-light-element-primary text-[1rem] leading-6 font-semibold tracking-default">
         Upload File
       </h3>

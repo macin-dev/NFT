@@ -18,7 +18,7 @@ export const Buy = () => {
             </p>
           </div>
           <p className="text-light-surface-hard text-lg leading-6 tracking-default">
-            $863.22
+            $12.20
           </p>
         </div>
       </div>

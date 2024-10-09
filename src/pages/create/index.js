@@ -11,3 +11,5 @@ export * from "./Form";
 export * from "./ButtonContainer";
 export * from "./UploadOff";
 export * from "./UploadOn";
+export * from "./Content";
+export * from "./Preview";
