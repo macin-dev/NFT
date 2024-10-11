@@ -9,9 +9,12 @@ export const List = () => {
       >
         Explore
       </NavLink>
-      <li className="text-light-element-secondary text-sm font-semibold tracking-[-0.013rem]">
+      <NavLink
+        to="/create"
+        className="text-light-element-secondary text-sm font-semibold tracking-[-0.013rem]"
+      >
         Create
-      </li>
+      </NavLink>
       <li className="text-light-element-secondary text-sm font-semibold tracking-[-0.013rem]">
         Sell
       </li>

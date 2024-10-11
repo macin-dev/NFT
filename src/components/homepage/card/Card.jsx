@@ -10,6 +10,7 @@ export const Card = () => {
           <Paragraph />
           <BlackButton_lg
             value="Explore"
+            path="/explore"
             icon="/assets/icons/light-arrow-right.svg"
           />
         </div>

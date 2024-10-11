@@ -18,7 +18,7 @@ export const Tablet = () => {
           <img src="/assets/icons/search.svg" alt="search icon" />
         </div>
 
-        <BlackButton_lg value="Connect Wallet" />
+        <BlackButton_lg path="/sing-up" value="Connect Wallet" />
 
         <div className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft">
           <img src="/assets/icons/shopping-bag.svg" alt="shopping bag icon" />

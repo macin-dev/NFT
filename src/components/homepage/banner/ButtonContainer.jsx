@@ -6,6 +6,7 @@ export const ButtonContainer = () => {
       <BlackButton_lg
         value="Create your own"
         icon="/assets/icons/light-arrow-right.svg"
+        path="/create"
       />
       <WhiteButton_lg
         value="Start Exploring"
