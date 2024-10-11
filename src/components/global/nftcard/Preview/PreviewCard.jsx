@@ -1,12 +1,11 @@
-export const PreviewCard = ({ url, userName, text, price }) => {
+import { DefaultPreview } from "./DefaultPreview";
+import { RenderImage } from "./RenderImage";
+
+export const PreviewCard = ({ userName, text, price, fileURL }) => {
   return (
     <div className="tablet:w-[270px] tablet:h-[320px] flex flex-col items-start rounded-2xl border-[0.7px] border-light-border bg-white desktop:w-[296px]">
-      <div className="tablet:h-[236px] desktop:h-[236px] flex p-2 self-stretch">
-        <img
-          className="rounded-xl object-cover h-full w-full"
-          src={url}
-          alt="NFT Avatar"
-        />
+      <div className="tablet:h-[236px] desktop:h-[236px] flex p-2 self-stretch relative">
+        {fileURL ? <RenderImage fileURL={fileURL} /> : <DefaultPreview />}
       </div>
 
       <div className="flex flex-col px-3 pb-3 pt-1 gap-2 self-stretch tablet:px-4 tablet:flex-grow desktop:gap-2 desktop:px-3">

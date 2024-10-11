@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const BlackButton_xl = ({ value, icon, grow }) => {
   return (
     <button
@@ -8,12 +6,7 @@ export const BlackButton_xl = ({ value, icon, grow }) => {
       }`}
     >
       {value && (
-        <Link
-          to="/sing-up"
-          className="text-white text-lg leading-6 tracking-default"
-        >
-          {value}
-        </Link>
+        <p className="text-white text-lg leading-6 tracking-default">{value}</p>
       )}
       {icon && <img src={icon} alt="Button" />}
     </button>

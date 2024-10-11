@@ -1,6 +1,14 @@
-export const Button = ({ active = false, value, icon }) => {
+export const Button = ({
+  active = false,
+  value,
+  icon,
+  onPriceOption,
+  name,
+}) => {
   return (
     <button
+      type="button"
+      onClick={() => onPriceOption(name, true)}
       className={`${
         active ? "border-2 border-light-surface-hard" : ""
       } bg-light-surface-soft h-14 flex gap-2.5 py-[0.875rem] px-2.5 justify-center items-center flex-grow shrink-0 basis-0 rounded-2xl`}

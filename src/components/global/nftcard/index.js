@@ -1,1 +1,1 @@
-export * from "./PreviewCard";
+export * from "./Preview/PreviewCard";

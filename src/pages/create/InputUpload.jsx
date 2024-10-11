@@ -1,13 +1,6 @@
-import { useState } from "react";
 import { UploadOn, UploadOff } from "./";
 
-export const InputUpload = () => {
-  const [file, setFile] = useState(null);
-
-  const handleFile = (e) => {
-    setFile(URL.createObjectURL(e.target.files[0]));
-  };
-
+export const InputUpload = ({ fileURL, onFile }) => {
   return (
     <div className="flex flex-col items-start gap-1 h-[20rem] self-stretch tablet:h-[37.3125rem]">
       <h3 className="text-light-element-primary text-[1rem] leading-6 font-semibold tracking-default">
@@ -22,10 +15,10 @@ export const InputUpload = () => {
           <input
             className="opacity-0 h-0 w-0"
             type="file"
-            onChange={handleFile}
+            onChange={onFile}
             id="file"
           />
-          {file ? <UploadOn file={file} /> : <UploadOff />}
+          {fileURL ? <UploadOn fileURL={fileURL} /> : <UploadOff />}
         </label>
       </div>
     </div>
