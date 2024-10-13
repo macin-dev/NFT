@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuContent } from "./mobile/MenuContent";
+import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 
 export const Mobile = () => {
   const [menu, setMenu] = useState(false);
@@ -8,6 +9,9 @@ export const Mobile = () => {
   const handleToggleMenu = (showMenu) => {
     setMenu(showMenu);
   };
+
+  // Custom hook to mange scrolling
+  usePreventScrolling(menu);
 
   return (
     <>
