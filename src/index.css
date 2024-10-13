@@ -15,8 +15,9 @@ html {
 }
 
 body {
+  width: 100%;
   font-family: Inter, sans-serif, Arial;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .bg-green {

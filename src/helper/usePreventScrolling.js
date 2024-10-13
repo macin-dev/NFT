@@ -5,7 +5,7 @@ export const usePreventScrolling = (isActive) => {
     const originalStyle = document.body.style.height;
 
     if (isActive) {
-      document.body.style.height = "100vh";
+      document.body.style.height = "90vh";
     } else {
       document.body.style.height = originalStyle;
     }
