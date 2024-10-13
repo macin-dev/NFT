@@ -1,6 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { MenuContent } from "./mobile/MenuContent";
 
 export const Mobile = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handleToggleMenu = (showMenu) => {
+    setMenu(showMenu);
+  };
+
   return (
     <>
       <div className="flex items-center gap-6">
@@ -9,14 +17,19 @@ export const Mobile = () => {
         </Link>
         <img src="/assets/icons/search.svg" alt="Search icon" />
       </div>
-      <div className="flex items-center gap-4">
+      <button
+        onClick={() => handleToggleMenu(!menu)}
+        className="flex items-center gap-4"
+      >
         <img
           className="p-2"
           src="/assets/icons/shopping-bag.svg"
           alt="Shopping bag icon"
         />
         <img src="/assets/icons/menu.svg" alt="Menu icon" />
-      </div>
+      </button>
+
+      {menu && <MenuContent />}
     </>
   );
 };
