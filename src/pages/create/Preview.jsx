@@ -9,8 +9,8 @@ export const Preview = ({ fileURL }) => {
       <PreviewCard
         url="/assets/home2.jpeg"
         userName="Winter Madagascar"
-        text=""
-        price=""
+        text="Meta Cartoon"
+        price="0.005"
         fileURL={fileURL}
       />
     </div>

@@ -1,14 +1,21 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { MenuContent } from "./mobile/MenuContent";
 import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 
 export const Mobile = () => {
   const [menu, setMenu] = useState(false);
+  const location = useLocation();
 
   const handleToggleMenu = (showMenu) => {
     setMenu(showMenu);
   };
+
+  // Track the current location to
+  // manage the menu component's state
+  useEffect(() => {
+    setMenu(false);
+  }, [location]);
 
   // Custom hook to mange scrolling
   usePreventScrolling(menu);
