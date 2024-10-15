@@ -3,6 +3,7 @@ import { Filter } from "../filter";
 import { Explore, HorizontalLayout, NFTSection, Options, Tab } from "./";
 import { Container } from "../../collections";
 import { UserSection } from "../../user";
+import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 
 export const NFT = () => {
   const [toggle, setToggle] = useState(false);
@@ -39,9 +40,11 @@ export const NFT = () => {
     });
   };
 
+  usePreventScrolling(toggle);
+
   return (
-    <section className={`relative ${toggle ? "h-screen overflow-hidden" : ""}`}>
-      <div className="flex flex-col w-mobile mx-auto tablet:w-tablet desktop:w-desktop self-stretch">
+    <>
+      <section className="flex flex-col w-mobile mx-auto tablet:w-tablet desktop:w-desktop self-stretch">
         <div className="flex flex-col items-start p-4 gap-4 tablet:py-6 tablet:px-10 desktop:py-10 desktop:px-20 self-stretch">
           <Explore />
 
@@ -62,7 +65,7 @@ export const NFT = () => {
         {tabs.tab2 && <Container />}
 
         {tabs.tab3 && <UserSection />}
-      </div>
+      </section>
       {toggle && (
         <Filter
           onToggle={onToggle}
@@ -70,6 +73,6 @@ export const NFT = () => {
           dropdown={dropdown}
         />
       )}
-    </section>
+    </>
   );
 };
