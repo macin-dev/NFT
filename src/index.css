@@ -224,3 +224,9 @@ body {
 .bg-transparent-dark {
   background: rgba(0, 0, 0, 0.3);
 }
+
+/* Transition Menu */
+
+.transition-menu {
+  transition: right 0.3s ease;
+}
