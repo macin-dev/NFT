@@ -2,13 +2,19 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MenuContent } from "./mobile/MenuContent";
 import { usePreventScrolling } from "../../../helper/usePreventScrolling";
+import { Cart } from "../../cart";
 
 export const Mobile = () => {
   const [menu, setMenu] = useState(false);
+  const [cart, setCart] = useState(false);
   const location = useLocation();
 
   const handleToggleMenu = (showMenu) => {
     setMenu(showMenu);
+  };
+
+  const handleClickCart = () => {
+    setCart(!cart);
   };
 
   // Track the current location to
@@ -19,6 +25,7 @@ export const Mobile = () => {
 
   // Custom hook to mange scrolling
   usePreventScrolling(menu);
+  usePreventScrolling(cart);
 
   return (
     <>
@@ -28,19 +35,29 @@ export const Mobile = () => {
         </Link>
         <img src="/assets/icons/search.svg" alt="Search icon" />
       </div>
-      <button
-        onClick={() => handleToggleMenu(!menu)}
-        className="flex items-center gap-4"
-      >
-        <img
-          className="p-2"
-          src="/assets/icons/shopping-bag.svg"
-          alt="Shopping bag icon"
-        />
-        <img src="/assets/icons/menu.svg" alt="Menu icon" />
-      </button>
+
+      <div className="flex items-center gap-4">
+        <button
+          onClick={() => handleClickCart()}
+          className="bg-light-surface-soft flex items-center rounded-lg"
+        >
+          <img
+            className="p-2"
+            src="/assets/icons/shopping-bag.svg"
+            alt="Shopping bag icon"
+          />
+        </button>
+
+        <button
+          onClick={() => handleToggleMenu(!menu)}
+          className="flex items-center"
+        >
+          <img className="p-2" src="/assets/icons/menu.svg" alt="Menu icon" />
+        </button>
+      </div>
 
       {menu && <MenuContent />}
+      {cart && <Cart onClickCart={handleClickCart} />}
     </>
   );
 };
