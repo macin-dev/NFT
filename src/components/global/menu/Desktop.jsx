@@ -3,7 +3,7 @@ import { BlackButton_lg } from "../button/BlackButton_lg";
 import { Search } from "../search";
 import { List, Theme } from "./";
 
-export const Desktop = () => {
+export const Desktop = ({ onClickCart }) => {
   return (
     <>
       <div className="flex items-center gap-6 flex-grow shrink-0">
@@ -21,9 +21,12 @@ export const Desktop = () => {
       <div className="inline-flex items-center gap-4 flex-grow shrink-0 justify-end">
         <BlackButton_lg path="/sing-up" value="Connect Wallet" />
 
-        <div className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft">
+        <button
+          onClick={() => onClickCart()}
+          className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft"
+        >
           <img src="/assets/icons/shopping-bag.svg" alt="shopping bag icon" />
-        </div>
+        </button>
 
         <Theme />
       </div>

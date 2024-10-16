@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BlackButton_lg } from "../button";
 import { List, Theme } from "./";
 
-export const Tablet = () => {
+export const Tablet = ({ onClickCart }) => {
   return (
     <>
       <div className="flex items-center gap-6 flex-grow shrink-0">
@@ -20,9 +20,12 @@ export const Tablet = () => {
 
         <BlackButton_lg path="/sing-up" value="Connect Wallet" />
 
-        <div className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft">
+        <button
+          onClick={() => onClickCart()}
+          className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft"
+        >
           <img src="/assets/icons/shopping-bag.svg" alt="shopping bag icon" />
-        </div>
+        </button>
 
         <Theme />
       </div>

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Desktop, Mobile, Tablet } from "./";
+import { usePreventScrolling } from "../../../helper/usePreventScrolling";
+import { Cart } from "../../cart";
 
 let initialValue = "";
 
@@ -13,6 +15,13 @@ if (window.innerWidth < 960) {
 
 export const Menu = () => {
   const [menu, setMenu] = useState(initialValue);
+  const [cart, setCart] = useState(false);
+
+  const handleClickCart = () => {
+    setCart(!cart);
+  };
+
+  usePreventScrolling(cart);
 
   useEffect(() => {
     let size = 0;
@@ -39,12 +48,14 @@ export const Menu = () => {
   return (
     <header className="w-full py-3 px-4 flex justify-between items-center tablet:w-[60rem] tablet:py-5 tablet:px-10 desktop:px-20 desktop:w-[90rem] mx-auto">
       {menu === "mobile" ? (
-        <Mobile />
+        <Mobile onClickCart={handleClickCart} cartState={cart} />
       ) : menu === "tablet" ? (
-        <Tablet />
+        <Tablet onClickCart={handleClickCart} />
       ) : (
-        <Desktop />
+        <Desktop onClickCart={handleClickCart} />
       )}
+
+      {cart && <Cart onClickCart={handleClickCart} />}
     </header>
   );
 };

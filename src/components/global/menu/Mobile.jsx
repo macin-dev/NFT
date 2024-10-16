@@ -2,19 +2,13 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MenuContent } from "./mobile/MenuContent";
 import { usePreventScrolling } from "../../../helper/usePreventScrolling";
-import { Cart } from "../../cart";
 
-export const Mobile = () => {
+export const Mobile = ({ onClickCart, cart }) => {
   const [menu, setMenu] = useState(false);
-  const [cart, setCart] = useState(false);
   const location = useLocation();
 
   const handleToggleMenu = (showMenu) => {
     setMenu(showMenu);
-  };
-
-  const handleClickCart = () => {
-    setCart(!cart);
   };
 
   // Track the current location to
@@ -25,7 +19,6 @@ export const Mobile = () => {
 
   // Custom hook to mange scrolling
   usePreventScrolling(menu);
-  usePreventScrolling(cart);
 
   return (
     <>
@@ -38,7 +31,7 @@ export const Mobile = () => {
 
       <div className="flex items-center gap-4">
         <button
-          onClick={() => handleClickCart()}
+          onClick={() => onClickCart()}
           className="bg-light-surface-soft flex items-center rounded-lg"
         >
           <img
@@ -57,7 +50,6 @@ export const Mobile = () => {
       </div>
 
       {menu && <MenuContent />}
-      {cart && <Cart onClickCart={handleClickCart} />}
     </>
   );
 };
