@@ -21,7 +21,7 @@ export const Mobile = () => {
   // manage the menu component's state
   useEffect(() => {
     setMenu(false);
-  }, [location]);
+  }, [location, cart]);
 
   // Custom hook to mange scrolling
   usePreventScrolling(menu);
