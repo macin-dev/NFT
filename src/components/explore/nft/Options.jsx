@@ -1,8 +1,20 @@
+import { useState } from "react";
+import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 import { Dropdown_md, Dropdown_sm } from "../../global/dropdown";
 import { Search } from "../../global/search";
 import { Layout } from "./Layout";
+import { Filter } from "../filter";
 
-export const Options = ({ onToggle }) => {
+export const Options = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const onToggle = () => {
+    setToggle(!toggle);
+  };
+
+  // custom hook for preventing scrolling
+  usePreventScrolling(toggle);
+
   return (
     <div className="flex gap-3 self-stretch">
       <Search placeholder="Search" />
@@ -35,6 +47,8 @@ export const Options = ({ onToggle }) => {
       )}
 
       <Layout />
+
+      {toggle && <Filter onToggle={onToggle} />}
     </div>
   );
 };
