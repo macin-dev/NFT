@@ -14,6 +14,7 @@ import { Header } from "./components/collections/header/Header.jsx";
 import { Layout } from "./components/user/Layout.jsx";
 import { Details } from "./pages/details/Details.jsx";
 import { Main } from "./pages/create/index.js";
+import { Profile } from "./pages/profile/Profile.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         <Route path="user/:userID" element={<Layout />} />
         <Route path="nft-detail/:itemID" element={<Details />} />
         <Route path="create" element={<Main />} />
+        <Route path="profile-settings" element={<Profile />} />
       </Route>
       <Route path="sing-up" element={<Wallet />} />
     </>

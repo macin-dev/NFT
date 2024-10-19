@@ -230,3 +230,17 @@ body {
 .transition-menu {
   transition: right 0.3s ease;
 }
+
+.bg-profile-default {
+  background: var(
+    --Gradient-001,
+    linear-gradient(90deg, #22c746 -2.53%, #b0f445 102.48%)
+  );
+}
+
+.bg-avatar {
+  background: var(
+    --Gradient-002,
+    linear-gradient(86deg, #5d96ff 4.33%, #d466ff 99.12%)
+  );
+}
