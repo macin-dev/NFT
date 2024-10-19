@@ -1,31 +1,15 @@
-import { useState } from "react";
-import { Container } from "../../explore/filter";
+import { FilterItemsMenu } from "../../explore/filter";
 import Card from "./Card";
 import { Tab } from "./Tab";
 import { userItems } from "./data";
 
 export const Content = () => {
-  const [dropdown, setDropdown] = useState({
-    blockchain: false,
-    status: false,
-    price: false,
-    category: false,
-    collections: false,
-  });
-
-  const onDropdown = (type) => {
-    setDropdown({
-      ...dropdown,
-      [type]: !dropdown[type],
-    });
-  };
-
   return (
     <section className="flex flex-col w-mobile tablet:w-tablet desktop:w-desktop">
       <Tab />
       <div className="p-0 tablet:flex tablet:items-start tablet:gap-8 tablet:px-10 tablet:pb-10 desktop:px-20 desktop:pb-20">
         <div className="hidden tablet:block">
-          <Container dropdown={dropdown} onDropdown={onDropdown} />
+          <FilterItemsMenu />
         </div>
         <div className="grid grid-cols-2 gap-3 px-4 pb-10 tablet:p-0 tablet:gap-y-4 desktop:grid-cols-4">
           {userItems.map((item, i) => (

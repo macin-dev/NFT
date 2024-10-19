@@ -1,35 +1,14 @@
 import { useState } from "react";
-import { Filter } from "../filter";
 import { Explore, HorizontalLayout, NFTSection, Options, Tab } from "./";
 import { Container } from "../../collections";
 import { UserSection } from "../../user";
-import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 
 export const NFT = () => {
-  const [toggle, setToggle] = useState(false);
   const [tabs, setTabs] = useState({
     tab1: true,
     tab2: false,
     tab3: false,
   });
-  const [dropdown, setDropdown] = useState({
-    blockchain: false,
-    status: false,
-    price: false,
-    category: false,
-    collections: false,
-  });
-
-  const onToggle = () => {
-    setToggle(!toggle);
-  };
-
-  const onDropdown = (type) => {
-    setDropdown({
-      ...dropdown,
-      [type]: !dropdown[type],
-    });
-  };
 
   const handleTabs = (tab) => {
     setTabs({
@@ -40,8 +19,6 @@ export const NFT = () => {
     });
   };
 
-  usePreventScrolling(toggle);
-
   return (
     <>
       <section className="flex flex-col w-mobile mx-auto tablet:w-tablet desktop:w-desktop self-stretch">
@@ -51,28 +28,19 @@ export const NFT = () => {
           {window.innerWidth < 1440 ? (
             <>
               <Tab tabs={tabs} onTabs={handleTabs} />
-              <Options onToggle={onToggle} />
+              <Options />
             </>
           ) : (
             <HorizontalLayout tabs={tabs} onTabs={handleTabs} />
           )}
         </div>
 
-        {tabs.tab1 && (
-          <NFTSection dropdown={dropdown} onDropdown={onDropdown} />
-        )}
+        {tabs.tab1 && <NFTSection />}
 
         {tabs.tab2 && <Container />}
 
         {tabs.tab3 && <UserSection />}
       </section>
-      {toggle && (
-        <Filter
-          onToggle={onToggle}
-          onDropdown={onDropdown}
-          dropdown={dropdown}
-        />
-      )}
     </>
   );
 };
