@@ -1,6 +1,6 @@
 import { UploadOn, UploadOff } from "./";
 
-export const InputUpload = ({ fileURL, onFile }) => {
+export const InputUpload = ({ dispatch, value }) => {
   return (
     <div className="flex flex-col items-start gap-1 h-[20rem] self-stretch tablet:h-[37.3125rem]">
       <h3 className="text-light-element-primary text-[1rem] leading-6 font-semibold tracking-default">
@@ -15,10 +15,12 @@ export const InputUpload = ({ fileURL, onFile }) => {
           <input
             className="opacity-0 h-0 w-0"
             type="file"
-            onChange={onFile}
+            onChange={(e) =>
+              dispatch({ type: "uploadFile", payload: e.target.files[0] })
+            }
             id="file"
           />
-          {fileURL ? <UploadOn fileURL={fileURL} /> : <UploadOff />}
+          {value ? <UploadOn fileURL={value} /> : <UploadOff />}
         </label>
       </div>
     </div>

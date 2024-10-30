@@ -1,6 +1,6 @@
 import { InputContainer } from "./";
 
-export const InputSelect = ({ value, onInputChange, numberName }) => {
+export const InputSelect = ({ value, dispatch, inputName }) => {
   return (
     <InputContainer label="Price">
       <div className="bg-light-surface-soft flex items-center gap-2.5 self-stretch rounded-2xl">
@@ -18,8 +18,13 @@ export const InputSelect = ({ value, onInputChange, numberName }) => {
         <input
           className="text-light-element-primary bg-transparent flex-grow shrink-0 basis-0 outline-none"
           type="number"
-          name={numberName}
-          onChange={onInputChange}
+          name={inputName}
+          onChange={(e) =>
+            dispatch({
+              type: "textInput",
+              payload: { name: e.target.name, value: e.target.value },
+            })
+          }
           value={value}
         />
       </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import { Dropdown, InputText, TextArea } from "../../components/global/inputs";
 import { BlackButton_xl } from "../../components/global/button/BlackButton_xl";
 import {
@@ -8,110 +8,102 @@ import {
   InputUpload,
   MarketPlaceOptions,
   Unlockable,
-  ButtonContainer,
+  PriceSelectionContainer,
 } from "./";
 import { InputSelect } from "../../components/global/inputs/InputSelect";
 import { chainIcons } from "./data";
+import { PreviewCard } from "../../components/global/nftcard";
+
+const initialState = {
+  file: null,
+  name: "",
+  description: "",
+  putOnMarketplace: true,
+  optionPrice: {
+    fixed: true,
+    timed: false,
+  },
+  price: 0,
+  unlockable: false,
+  currencyType: "avalanche",
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "uploadFile":
+      return { ...state, file: URL.createObjectURL(action.payload) };
+    case "textInput":
+      return { ...state, [action.payload.name]: action.payload.value };
+    case "toggleInput":
+      return { ...state, [action.payload]: !state[action.payload] };
+    case "optionPrice":
+      return {
+        ...state,
+        optionPrice: {
+          fixed: false,
+          timed: false,
+          [action.payload]: !state[action.payload],
+        },
+      };
+    default:
+      throw new Error("Unknown type");
+  }
+}
 
 export const Main = () => {
-  const [fileItem, setFileItem] = useState(null);
-  const [createItem, setCreateItem] = useState({
-    name: "",
-    description: "",
-    putOnMarketplace: true,
-    optionPrice: {
-      fixed: true,
-      timed: false,
-    },
-    price: 0,
-    unlockable: false,
-    currencyType: "avalanche",
-  });
-
-  const handleInputChange = (e) => {
-    const inputName = e.target.name;
-    const inputValue = e.target.value;
-
-    setCreateItem({
-      ...createItem,
-      [inputName]: inputValue,
-    });
-  };
-
-  const handleFile = (e) => {
-    setFileItem(URL.createObjectURL(e.target.files[0]));
-  };
-
-  const handleOptionPrice = (name, value) => {
-    const optionPrice = {
-      fixed: false,
-      timed: false,
-    };
-    setCreateItem({
-      ...createItem,
-      optionPrice: {
-        ...optionPrice,
-        [name]: value,
-      },
-    });
-  };
-
-  const handleToggle = (name, value) => {
-    setCreateItem({
-      ...createItem,
-      [name]: value,
-    });
-  };
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const {
+    file,
+    name,
+    description,
+    putOnMarketplace,
+    optionPrice,
+    price,
+    unlockable,
+    currencyType,
+  } = state;
 
   const handleBlockchainIcon = (name) => {
     return chainIcons.filter((obj) => obj.value === name);
   };
 
-  const blockchainIcon = handleBlockchainIcon(createItem.currencyType).at(0);
+  const blockchainIcon = handleBlockchainIcon(currencyType).at(0);
 
   return (
     <section className="w-mobile mx-auto tablet:flex tablet:items-start tablet:gap-8 tablet:justify-center tablet:w-tablet tablet:py-20 tablet:px-10 desktop:w-desktop desktop:justify-end desktop:pr-[11.8125rem] desktop:pl-0">
       <section className="flex flex-col items-start gap-6 py-10 px-4 justify-center tablet:gap-[3.75rem] tablet:p-0 tablet:flex-grow desktop:w-[39rem] desktop:flex-grow-0">
         <Title />
         <Form>
-          <InputUpload fileURL={fileItem} onFile={handleFile} />
-          <InputText
-            onInputChange={handleInputChange}
-            value={createItem.name}
-            label="name"
-          />
-          <TextArea
-            onInputChange={handleInputChange}
-            value={createItem.description}
-            label="description"
-          />
-          <MarketPlaceOptions
-            value={createItem.putOnMarketplace}
-            onToggle={handleToggle}
-          >
-            <ButtonContainer
-              onPriceOption={handleOptionPrice}
-              optionPrice={createItem.optionPrice}
-            />
-            <InputSelect
-              onInputChange={handleInputChange}
-              numberName="price"
-              value={createItem.price}
-            />
+          <InputUpload dispatch={dispatch} value={file} />
+          <InputText dispatch={dispatch} value={name} />
+          <TextArea dispatch={dispatch} value={description} />
+          <MarketPlaceOptions dispatch={dispatch} value={putOnMarketplace}>
+            <PriceSelectionContainer dispatch={dispatch} value={optionPrice} />
+            <InputSelect dispatch={dispatch} value={price} inputName="price" />
           </MarketPlaceOptions>
-          <Unlockable value={createItem.unlockable} onToggle={handleToggle} />
+          <Unlockable value={unlockable} dispatch={dispatch} />
           <Dropdown
-            value={createItem.currencyType}
-            onInputChange={handleInputChange}
+            value={currencyType}
+            dispatch={dispatch}
             icon={blockchainIcon}
-            label="Blockchain"
             options={chainIcons}
           />
           <BlackButton_xl value="Finish" />
         </Form>
         {/* Preview Item Component */}
       </section>
-      {window.innerWidth >= 960 && <Preview fileURL={fileItem} />}
+
+      {window.innerWidth >= 960 && (
+        <Preview value={file}>
+          <PreviewCard
+            url="/assets/home2.jpeg"
+            userName="Winter Madagascar"
+            text="Meta Cartoon"
+            price="0.005"
+            fileURL={file}
+          />
+        </Preview>
+      )}
     </section>
   );
 };

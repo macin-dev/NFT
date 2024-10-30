@@ -1,19 +1,19 @@
-import { Button } from "./Button";
+import { PriceSelection } from "./PriceSelection";
 
-export const ButtonContainer = ({ optionPrice, onPriceOption }) => {
+export const PriceSelectionContainer = ({ dispatch, value }) => {
   return (
     <div className="flex items-start gap-4 self-stretch">
-      <Button
+      <PriceSelection
         name="fixed"
-        onPriceOption={onPriceOption}
-        active={optionPrice.fixed}
+        dispatch={dispatch}
+        active={value.fixed}
         value="Fixed price"
         icon="/assets/icons/tag.svg"
       />
-      <Button
+      <PriceSelection
         name="timed"
-        onPriceOption={onPriceOption}
-        active={optionPrice.timed}
+        dispatch={dispatch}
+        active={value.timed}
         value="Timed auction"
         icon="/assets/icons/clock.svg"
       />

@@ -1,8 +1,8 @@
 import { InputContainer } from "./";
 
-export const Dropdown = ({ icon, label, onInputChange, options }) => {
+export const Dropdown = ({ icon, dispatch, options }) => {
   return (
-    <InputContainer label={label}>
+    <InputContainer label="Blockchain">
       <label className="bg-light-surface-soft flex items-center py-4 px-6 gap-2.5 self-stretch rounded-2xl relative">
         {icon.name && <img src={icon.svg} alt={icon.name} />}
 
@@ -10,7 +10,12 @@ export const Dropdown = ({ icon, label, onInputChange, options }) => {
           className="bg-transparent outline-none z-20 text-light-element-secondary appearance-none text-sm text-left tracking-default flex-grow shrink-0 basis-0"
           name="currencyType"
           id="currencyType"
-          onChange={onInputChange}
+          onChange={(e) =>
+            dispatch({
+              type: "textInput",
+              payload: { name: e.target.name, value: e.target.value },
+            })
+          }
         >
           {options.map((opt) => (
             <option key={opt.value} value={opt.value}>
