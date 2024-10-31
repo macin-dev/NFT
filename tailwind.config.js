@@ -23,6 +23,9 @@ export default {
         tablet: "60rem",
         desktop: "90rem",
       },
+      height: {
+        fullHightViewport: "calc(100vh - 3.5rem)",
+      },
       letterSpacing: {
         default: "-0.0125rem",
       },

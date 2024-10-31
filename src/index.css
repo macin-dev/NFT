@@ -244,3 +244,8 @@ body {
     linear-gradient(86deg, #5d96ff 4.33%, #d466ff 99.12%)
   );
 }
+
+.cart-height {
+  height: calc(100vh - 56px);
+  background-color: red;
+}
