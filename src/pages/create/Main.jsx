@@ -23,7 +23,7 @@ const initialState = {
     fixed: true,
     timed: false,
   },
-  price: 0,
+  price: "",
   unlockable: false,
   currencyType: "avalanche",
 };
@@ -98,8 +98,8 @@ export const Main = () => {
           <PreviewCard
             url="/assets/home2.jpeg"
             userName="Winter Madagascar"
-            text="Meta Cartoon"
-            price="0.005"
+            text={name}
+            price={price}
             fileURL={file}
           />
         </Preview>

@@ -21,7 +21,7 @@ export const PreviewCard = ({ userName, text, price, fileURL }) => {
           {text}
         </p>
         <p className="text-light-element-primary text-[0.75rem] leading-4 tracking-default">
-          {price}
+          {price && price + " ETH"}
         </p>
       </div>
     </div>
