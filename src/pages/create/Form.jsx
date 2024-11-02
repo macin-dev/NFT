@@ -1,7 +1,7 @@
-export const Form = ({ children }) => {
+export const Form = ({ children, onSubmit }) => {
   return (
     <form
-      // onSubmit={handleSubmit}
+      onSubmit={onSubmit}
       className="flex flex-col gap-10 self-stretch tablet:items-end"
     >
       {children}
