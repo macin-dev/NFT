@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Content } from "./profile/Content";
 import { Profile } from "./profile/Profile";
-import { users } from "./users";
+import { users } from "../../../data/users";
 
 export const Layout = () => {
   const [userData, setUserData] = useState({});

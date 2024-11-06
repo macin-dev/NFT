@@ -22,12 +22,12 @@ export const Options = () => {
       {window.innerWidth < 960 ? (
         <>
           <Dropdown_sm
-            icon="./assets/icons/sliders.svg"
+            icon="/assets/icons/sliders.svg"
             alt="filtering icon to display a menu of options"
             onToggle={onToggle}
           />
           <Dropdown_sm
-            icon="./assets/icons/filter.svg"
+            icon="/assets/icons/filter.svg"
             alt="filtering icon to display a menu of options"
           />
         </>
@@ -35,12 +35,12 @@ export const Options = () => {
         <>
           <Dropdown_md
             value="Filters"
-            url="./assets/icons/sliders.svg"
+            url="/assets/icons/sliders.svg"
             alt="filtering icon to display a menu of options"
           />
           <Dropdown_md
             value="Trending"
-            url="./assets/icons/chevron-down.svg"
+            url="/assets/icons/chevron-down.svg"
             alt="filtering icon to display a menu of options"
           />
         </>

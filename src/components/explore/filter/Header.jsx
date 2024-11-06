@@ -8,7 +8,7 @@ export const Header = ({ onToggle }) => {
         onClick={onToggle}
         className="flex items-center justify-center p-3.5 h-12 w-12 shrink-0 rounded-xl bg-light-surface-soft"
       >
-        <img src="./assets/icons/x.svg" alt="Close Icon" />
+        <img src="/assets/icons/x.svg" alt="Close Icon" />
       </button>
     </div>
   );

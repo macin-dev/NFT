@@ -4,7 +4,7 @@ export const Avatar = () => {
       <div className="flex w-12 h-12 items-center justify-center">
         <img
           className="w-full h-full rounded-xl"
-          src="./assets/trending/profile1.jpeg"
+          src="/assets/trending/profile1.jpeg"
           alt="NFT user avatar"
         />
       </div>
@@ -14,7 +14,7 @@ export const Avatar = () => {
           <h3 className="text-light-element-primary text-[1rem] leading-6 font-semibold tracking-default">
             Extraordinary Ape
           </h3>
-          <img src="./assets/icons/verify.svg" alt="Verify Icon" />
+          <img src="/assets/icons/verify.svg" alt="Verify Icon" />
         </div>
 
         <div className="flex items-start gap-1">

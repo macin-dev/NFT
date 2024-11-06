@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { BlackButton_md } from "../global/button/BlackButton_md";
+import { BlackButton_md } from "../../components/global/button";
 
-export const Info = ({ userID, username }) => {
+export const UserInfo = ({ userID, username }) => {
   return (
     <div className="flex flex-col pt-6 px-3 pb-4 self-stretch">
       <div className="flex justify-between items-center self-stretch">
@@ -13,7 +13,7 @@ export const Info = ({ userID, username }) => {
             >
               {username}
             </Link>
-            <img src="./assets/icons/verify.svg" alt="Verify Icon" />
+            <img src="/assets/icons/verify.svg" alt="Verify Icon" />
           </div>
 
           <div className="flex items-center gap-3">
@@ -36,7 +36,7 @@ export const Info = ({ userID, username }) => {
           </div>
         </div>
 
-        <BlackButton_md icon="./assets/icons/plus.svg" />
+        <BlackButton_md icon="/assets/icons/plus.svg" />
       </div>
     </div>
   );

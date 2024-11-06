@@ -1,6 +1,6 @@
-import { Avatar } from "./Avatar";
+import { UserPhoto } from "./UserPhoto";
 
-export const Rectangle = ({ bgUrl, avatarUrl }) => {
+export const UserBackground = ({ bgUrl, avatarUrl }) => {
   return (
     <div className="w-[21.4375rem] h-[6.25rem] rounded-tl-xl rounded-tr-xl relative tablet:w-full">
       <img
@@ -8,7 +8,7 @@ export const Rectangle = ({ bgUrl, avatarUrl }) => {
         src={bgUrl}
         alt="Background Image"
       />
-      <Avatar avatarUrl={avatarUrl} />
+      <UserPhoto avatarUrl={avatarUrl} />
     </div>
   );
 };

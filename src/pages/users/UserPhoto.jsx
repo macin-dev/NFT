@@ -1,4 +1,4 @@
-export const Avatar = ({ avatarUrl }) => {
+export const UserPhoto = ({ avatarUrl }) => {
   return (
     <img
       className="w-14 h-14 rounded-[1.75rem] border-2 border-white object-cover absolute -bottom-4 left-3.5"

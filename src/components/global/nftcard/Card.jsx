@@ -13,7 +13,7 @@ export const Card = ({ url, userName, text, price }) => {
         <h3 className="text-light-element-secondary flex gap-1 text-[0.75rem] leading-4">
           <img
             className="w-4 h-4"
-            src="./assets/cards/verify.svg"
+            src="/assets/cards/verify.svg"
             alt="Verify Icon"
           />
           {userName}

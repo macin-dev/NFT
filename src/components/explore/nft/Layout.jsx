@@ -8,7 +8,7 @@ export const Layout = () => {
         >
           <div className="flex items-center justify-center">
             <img
-              src={`./assets/icons/layout${index + 1}.svg`}
+              src={`/assets/icons/layout${index + 1}.svg`}
               alt="Layout icon"
             />
           </div>
