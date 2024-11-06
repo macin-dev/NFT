@@ -1,6 +1,11 @@
-export const Card = ({ url, userName, text, price }) => {
+import { Link } from "react-router-dom";
+
+export const Card = ({ itemID, url, userName, text, price }) => {
   return (
-    <div className="flex flex-col items-start rounded-2xl border-[0.7px] border-light-border bg-white tablet:h-full">
+    <Link
+      to={`/nft-detail/${itemID}`}
+      className="flex flex-col items-start rounded-2xl border-[0.7px] border-light-border bg-white tablet:h-full"
+    >
       <div className="flex p-2 self-stretch tablet:h-[11.25rem] desktop:h-[14.75rem]">
         <img
           className="rounded-xl object-cover h-full w-full"
@@ -25,6 +30,6 @@ export const Card = ({ url, userName, text, price }) => {
           {price}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };

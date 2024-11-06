@@ -1,11 +1,11 @@
 import { Buttons, Owner, Buy } from "./";
 
-export const Card = () => {
+export const Card = ({ userName, itemName, itemPrice }) => {
   return (
     <div className="flex flex-col items-start gap-6 self-stretch tablet:gap-10 tablet:flex-grow tablet:shrink-0 tablet:basis-0">
-      <Owner />
+      <Owner userName={userName} itemName={itemName} />
       <Buttons />
-      <Buy />
+      <Buy itemPrice={itemPrice} />
     </div>
   );
 };

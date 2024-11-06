@@ -13,9 +13,10 @@ export const Grid_default = () => {
           className="w-[10.3125rem] h-[15.625rem] tablet:w-[16.875rem] tablet:h-[17.5rem] desktop:w-[14.3125rem] desktop:h-[20rem]"
         >
           <Card
-            url={item.url}
-            userName={item.name}
-            text="Clown Ape"
+            itemID={item.ultIId}
+            url={item.asset}
+            userName={item.userName}
+            text={item.itemName}
             price={`${item.price} ETH`}
           />
         </div>

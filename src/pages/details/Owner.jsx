@@ -1,4 +1,4 @@
-export const Owner = () => {
+export const Owner = ({ userName, itemName }) => {
   return (
     <div className="flex flex-col items-start gap-2">
       <div className="flex items-center gap-1">
@@ -8,12 +8,12 @@ export const Owner = () => {
           alt="Verify Icon"
         />
         <p className="text-light-element-secondary text-sm tracking-default">
-          Winter Madagascar
+          {userName}
         </p>
       </div>
 
       <h4 className="text-light-element-primary text-[1.5rem] leading-7 font-semibold tablet:text-[2rem] tablet:leading-10">
-        Whistle Ape
+        {itemName}
       </h4>
 
       <div className="flex gap-2 items-center">

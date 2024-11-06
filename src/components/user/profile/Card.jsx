@@ -25,7 +25,7 @@ export default function Card({ url, title, name, price, itemID }) {
             {name}
           </p>
           <p className="text-light-element-primary text-[0.75rem] leading-4 tracking-default">
-            {price}
+            {price + " ETH"}
           </p>
         </div>
       </div>

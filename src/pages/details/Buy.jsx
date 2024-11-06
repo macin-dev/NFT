@@ -1,6 +1,6 @@
 import { BlackButton_xl } from "../../components/global/button/BlackButton_xl";
 
-export const Buy = () => {
+export const Buy = ({ itemPrice }) => {
   return (
     <div className="bg-light-surface-soft flex flex-col p-3 gap-3 justify-center self-stretch rounded-2xl">
       <div className="flex flex-col items-start gap-1 p-4 self-stretch">
@@ -11,7 +11,7 @@ export const Buy = () => {
         <div className="flex items-start gap-1 self-stretch">
           <div className="flex items-start gap-1 flex-grow shrink-0 basis-0">
             <p className="text-light-element-primary text-[2rem] leading-10 font-semibold">
-              0.005
+              {itemPrice}
             </p>
             <p className="text-light-element-secondary text-[1rem] leading-6 tracking-default">
               ETH

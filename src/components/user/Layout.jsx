@@ -23,7 +23,7 @@ export const Layout = () => {
         bgURL={userData.bgURL}
         username={userData.username}
       />
-      <Content />
+      <Content userVault={userData.vault} userName={userData.username} />
     </section>
   );
 };
