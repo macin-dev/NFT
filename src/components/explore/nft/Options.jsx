@@ -4,9 +4,11 @@ import { Dropdown_md, Dropdown_sm } from "../../global/dropdown";
 import { Search } from "../../global/search";
 import { Layout } from "./Layout";
 import { Filter } from "../filter";
+import { useResize } from "../../../helper/useResize";
 
 export const Options = () => {
   const [toggle, setToggle] = useState(false);
+  const { documentSize } = useResize();
 
   const onToggle = () => {
     setToggle(!toggle);
@@ -19,7 +21,7 @@ export const Options = () => {
     <div className="flex gap-3 self-stretch">
       <Search placeholder="Search" />
 
-      {window.innerWidth < 960 ? (
+      {documentSize === "mobile" && (
         <>
           <Dropdown_sm
             icon="/assets/icons/sliders.svg"
@@ -31,7 +33,9 @@ export const Options = () => {
             alt="filtering icon to display a menu of options"
           />
         </>
-      ) : (
+      )}
+
+      {documentSize === "tablet" && (
         <>
           <Dropdown_md
             value="Filters"
