@@ -4,7 +4,6 @@ import { useResize } from "../../../helper/useResize";
 
 export const NFT = () => {
   const { documentSize } = useResize();
-  console.log(documentSize);
 
   return (
     <section className="flex flex-col w-mobile mx-auto tablet:w-tablet desktop:w-desktop self-stretch">

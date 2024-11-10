@@ -1,7 +1,7 @@
 import { BlackButton_xl } from "../../global/button";
 import { Card } from "./card";
 
-export const Body = () => {
+export const Body = ({ cart }) => {
   return (
     <div className="flex flex-col gap-2 items-start py-3 px-4 flex-grow shrink-0 basis-0 self-stretch">
       {/* items */}
@@ -12,9 +12,15 @@ export const Body = () => {
           </button>
         </div>
 
-        <Card />
-        <Card />
-        <Card />
+        {cart.map((item) => (
+          <Card
+            key={item.ultIId}
+            asset={item.asset}
+            userName={item.userName}
+            itemName={item.itemName}
+            price={item.price}
+          />
+        ))}
       </div>
 
       {/* Button */}
