@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Desktop, Mobile, Tablet } from "./";
+import { DesktopMenu, MobileMenu, TabletMenu } from "./";
 import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 import { Cart } from "../../cart";
 import { useResize } from "../../../helper/useResize";
@@ -15,12 +15,16 @@ export const Menu = () => {
   usePreventScrolling(cart);
 
   return (
-    <header className="w-full py-3 px-4 flex justify-between items-center tablet:w-[60rem] tablet:py-5 tablet:px-10 desktop:px-20 desktop:w-[90rem] mx-auto">
+    <header>
       {documentSize === "mobile" && (
-        <Mobile onClickCart={handleClickCart} cartState={cart} />
+        <MobileMenu onClickCart={handleClickCart} cartState={cart} />
       )}
-      {documentSize === "tablet" && <Tablet onClickCart={handleClickCart} />}
-      {documentSize === "desktop" && <Desktop onClickCart={handleClickCart} />}
+      {documentSize === "tablet" && (
+        <TabletMenu onClickCart={handleClickCart} />
+      )}
+      {documentSize === "desktop" && (
+        <DesktopMenu onClickCart={handleClickCart} />
+      )}
       {cart && <Cart onClickCart={handleClickCart} />}
     </header>
   );

@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { BlackButton_lg } from "../button/BlackButton_lg";
-import { Search } from "../search";
-import { List, Theme } from "./";
+import PropTypes from "prop-types";
+import { BlackButton_lg } from "../button";
+import { List, Theme } from ".";
+import Navbar from "./Navbar";
 
-export const Desktop = ({ onClickCart }) => {
+export const TabletMenu = ({ onClickCart }) => {
   return (
-    <>
+    <Navbar>
       <div className="flex items-center gap-6 flex-grow shrink-0">
         <Link to="/">
           <img src="/assets/Union.svg" alt="Ultrarare Logo" />
@@ -14,11 +15,11 @@ export const Desktop = ({ onClickCart }) => {
         <List />
       </div>
 
-      <div className="w-[26.625rem]">
-        <Search placeholder="Type for collections, NFTs etc" />
-      </div>
+      <div className="flex items-center gap-4 flex-grow shrink-0 justify-end">
+        <div className="flex p-[0.875rem] h-12 rounded-xl bg-light-surface-soft">
+          <img src="/assets/icons/search.svg" alt="search icon" />
+        </div>
 
-      <div className="inline-flex items-center gap-4 flex-grow shrink-0 justify-end">
         <BlackButton_lg path="/sing-up" value="Connect Wallet" />
 
         <button
@@ -30,6 +31,10 @@ export const Desktop = ({ onClickCart }) => {
 
         <Theme />
       </div>
-    </>
+    </Navbar>
   );
+};
+
+TabletMenu.propTypes = {
+  onClickCart: PropTypes.func,
 };
