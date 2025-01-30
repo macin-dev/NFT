@@ -11,9 +11,13 @@ export const useResize = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (getScreenSize() === "mobile") setDocumentSize("mobile");
-      if (getScreenSize() === "tablet") setDocumentSize("tablet");
-      if (getScreenSize() === "desktop") setDocumentSize("desktop");
+      if (getScreenSize() === "mobile") {
+        setDocumentSize("mobile");
+      } else if (getScreenSize() === "tablet") {
+        setDocumentSize("tablet");
+      } else if (getScreenSize() === "desktop") {
+        setDocumentSize("desktop");
+      }
     };
 
     window.addEventListener("resize", handleResize);
