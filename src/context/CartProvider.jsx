@@ -20,8 +20,6 @@ export const CartProvider = ({ children }) => {
     setCart((cItems) => [newItem, ...cItems]);
   };
 
-  console.log(itemsOnCart);
-
   return (
     <CartContext.Provider value={{ cart, addNewItem, itemsOnCart }}>
       {children}
