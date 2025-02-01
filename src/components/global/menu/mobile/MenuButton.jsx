@@ -14,7 +14,7 @@ const MenuButton = ({ menu, handleToggleMenu }) => {
         <ActionButton
           handlerEvent={() => handleToggleMenu(!menu)}
           color={false}
-          pathIcon="/assets/icons/x.svg"
+          pathIcon="/assets/icons/xMenu.svg"
         />
       )}
     </>
