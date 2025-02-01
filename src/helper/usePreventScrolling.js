@@ -2,9 +2,9 @@ import { useEffect } from "react";
 
 export const usePreventScrolling = (isActive) => {
   useEffect(() => {
-    const defaultHeight = document.body.style.height;
-    const defaultPosition = document.body.style.position;
-    const defaultOverflow = document.body.style.overflow;
+    const defaultHeight = "auto";
+    const defaultPosition = "static";
+    const defaultOverflow = "auto";
 
     if (isActive) {
       document.body.style.height = "100vh";

@@ -8,6 +8,7 @@ import ActionButton from "../ActionButton";
 import Navbar from "./Navbar";
 import DisplayMobileMenu from "./mobile/DisplayMobileMenu";
 import PropTypes from "prop-types";
+import MenuButton from "./mobile/MenuButton";
 
 export const MobileMenu = ({ onClickCart, cart }) => {
   const [menu, setMenu] = useState(false);
@@ -38,11 +39,7 @@ export const MobileMenu = ({ onClickCart, cart }) => {
           color={true}
           pathIcon="/assets/icons/shopping-bag.svg"
         />
-        <ActionButton
-          handlerEvent={() => handleToggleMenu(!menu)}
-          color={false}
-          pathIcon="/assets/icons/menu.svg"
-        />
+        <MenuButton handleToggleMenu={handleToggleMenu} menu={menu} />
       </Container>
       {menu && <DisplayMobileMenu />}
     </Navbar>
