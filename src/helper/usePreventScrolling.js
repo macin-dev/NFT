@@ -2,24 +2,23 @@ import { useEffect } from "react";
 
 export const usePreventScrolling = (isActive) => {
   useEffect(() => {
-    const defaultHeight = "auto";
-    const defaultPosition = "static";
-    const defaultOverflow = document.body.style.overflow;
-
     if (isActive) {
-      document.body.style.height = "100vh";
-      document.body.style.position = "static";
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.height = defaultHeight;
-      document.body.style.position = defaultPosition;
-      document.body.style.overflow = defaultOverflow;
-    }
+      // Save the current overflow and height values to restore them later
+      const originalBodyOverflow = document.body.style.overflow;
+      const originalHtmlOverflow = document.documentElement.style.overflow;
+      const originalBodyHeight = document.body.style.height;
 
-    return () => {
-      document.body.style.height = defaultHeight;
-      document.body.style.position = defaultPosition;
-      document.body.style.overflow = defaultOverflow;
-    };
+      // Apply styles to prevent scrolling
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.height = "100%";
+
+      // Cleanup function to restore original styles
+      return () => {
+        document.body.style.overflow = originalBodyOverflow;
+        document.documentElement.style.overflow = originalHtmlOverflow;
+        document.body.style.height = originalBodyHeight;
+      };
+    }
   }, [isActive]);
 };
