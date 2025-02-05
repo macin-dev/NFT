@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
 const navLinkStyles =
   "inline-flex flex-grow py-3 px-4 items-center justify-center gap-2.5 shrink-0 basis-0 rounded-xl shadow-sm";
 
-export const Tab_md = ({ value, path }) => {
+const TabWhite = ({ value, path }) => {
   return (
     <NavLink
       to={path}
@@ -20,4 +21,9 @@ export const Tab_md = ({ value, path }) => {
   );
 };
 
-//
+TabWhite.propTypes = {
+  value: PropTypes.string,
+  path: PropTypes.string,
+};
+
+export default TabWhite;

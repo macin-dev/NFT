@@ -1,26 +1,24 @@
-import { Dropdown_lg } from "../../global/dropdown";
 import { Search } from "../../global/search";
+import ToggleBtn from "../../toggle/ToggleBtn";
 import { Tab, Layout } from "./";
 
 export const HorizontalLayout = () => {
   return (
     <div className="flex gap-4 self-stretch">
-      <Dropdown_lg
+      <ToggleBtn
+        size="large"
         value="Filters"
         url="/assets/icons/sliders.svg"
-        alt="Filtering icon to display a menu of options"
+        alt="show or hide filter menu"
       />
-
       <Tab />
-
       <Search placeholder="Type for NFTs" />
-
-      <Dropdown_lg
+      <ToggleBtn
+        size="large"
         value="Trending"
         url="/assets/icons/chevron-down.svg"
-        alt="Filtering icon to display a menu of options"
+        alt="menu of options"
       />
-
       <Layout />
     </div>
   );
