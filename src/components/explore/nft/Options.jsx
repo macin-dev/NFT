@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { usePreventScrolling } from "../../../helper/usePreventScrolling";
-import { Dropdown_md, Dropdown_sm } from "../../global/dropdown";
 import { Search } from "../../global/search";
 import { Layout } from "./Layout";
 import { Filter } from "../filter";
 import { useResize } from "../../../helper/useResize";
+import TogleMobile from "./TogleMobile";
+import ToggleTablet from "./ToggleTablet";
 
 export const Options = () => {
   const [toggle, setToggle] = useState(false);
@@ -20,38 +21,12 @@ export const Options = () => {
   return (
     <div className="flex gap-3 self-stretch">
       <Search placeholder="Search" />
-
-      {documentSize === "mobile" && (
-        <>
-          <Dropdown_sm
-            icon="/assets/icons/sliders.svg"
-            alt="filtering icon to display a menu of options"
-            onToggle={onToggle}
-          />
-          <Dropdown_sm
-            icon="/assets/icons/filter.svg"
-            alt="filtering icon to display a menu of options"
-          />
-        </>
+      {documentSize === "mobile" ? (
+        <TogleMobile onToggle={onToggle} />
+      ) : (
+        <ToggleTablet />
       )}
-
-      {documentSize === "tablet" && (
-        <>
-          <Dropdown_md
-            value="Filters"
-            url="/assets/icons/sliders.svg"
-            alt="filtering icon to display a menu of options"
-          />
-          <Dropdown_md
-            value="Trending"
-            url="/assets/icons/chevron-down.svg"
-            alt="filtering icon to display a menu of options"
-          />
-        </>
-      )}
-
       <Layout />
-
       {toggle && <Filter onToggle={onToggle} />}
     </div>
   );
