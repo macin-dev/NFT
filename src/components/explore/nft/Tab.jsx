@@ -6,12 +6,14 @@ const tab_options = [
   { id: Math.random(), path: "users", value: "Users" },
 ];
 
-export const Tab = () => {
+const Tab = () => {
   return (
-    <nav className="flex p-1 gap-[0.0625rem] self-stretch rounded-2xl bg-light-surface-soft">
+    <nav className="w-full flex p-1 gap-[0.0625rem] self-stretch rounded-2xl bg-light-surface-soft desktop:w-auto">
       {tab_options.map((tab) => (
         <TabWhite key={tab.id} path={tab.path} value={tab.value} />
       ))}
     </nav>
   );
 };
+
+export default Tab;

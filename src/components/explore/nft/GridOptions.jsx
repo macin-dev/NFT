@@ -1,4 +1,4 @@
-export const Layout = () => {
+const GridOptions = () => {
   return (
     <div className="hidden p-1 gap-[0.0625rem] rounded-2xl bg-light-surface-soft tablet:flex">
       {Array.from({ length: 3 }, (_, index) => (
@@ -17,3 +17,5 @@ export const Layout = () => {
     </div>
   );
 };
+
+export default GridOptions;
