@@ -2,6 +2,7 @@ import { Menu } from "./components/global";
 import { Footer } from "./components/global/footer";
 import { CartProvider } from "./context/CartProvider";
 import { CollectionProvider } from "./context/CollectionProvider";
+import { FilterMenuProvider } from "./context/FilterMenuContext";
 import { ScrollToTop } from "./helper/ScrollToTop";
 
 import "./index.css";
@@ -11,10 +12,12 @@ export function App() {
   return (
     <CollectionProvider>
       <CartProvider>
-        <ScrollToTop />
-        <Menu />
-        <Outlet />
-        <Footer />
+        <FilterMenuProvider>
+          <ScrollToTop />
+          <Menu />
+          <Outlet />
+          <Footer />
+        </FilterMenuProvider>
       </CartProvider>
     </CollectionProvider>
   );

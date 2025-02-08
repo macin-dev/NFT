@@ -1,21 +1,15 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { Search } from "../../global/search";
-import { Filter } from "../filter";
 import ToggleBtn from "../../toggle/ToggleBtn";
 import GridOptions from "./GridOptions";
 import Tab from "./Tab";
 import HeaderExplore from "./HeaderExplore";
-import { usePreventScrolling } from "../../../helper/usePreventScrolling";
+import Filter from "../filter/Filter";
+import { FilterMenuContext } from "../../../context/FilterMenuContext";
 
-export const NFT = () => {
-  const [toggle, setToggle] = useState(false);
-  const onToggle = () => {
-    setToggle(!toggle);
-  };
-
-  // custom hook for preventing scrolling
-  usePreventScrolling(toggle);
+const NavBar = () => {
+  const { filterMenu, onFilterMenu } = useContext(FilterMenuContext);
 
   return (
     <section className="flex flex-col self-stretch w-mobile mx-auto tablet:w-tablet desktop:w-desktop">
@@ -24,11 +18,11 @@ export const NFT = () => {
         <Tab />
         <Search placeholder="Search" />
         <ToggleBtn
-          onToggle={onToggle}
+          onToggle={onFilterMenu}
           value="Filters"
           url="/assets/icons/sliders.svg"
           alt="display a menu of options"
-          flex_order="order-first"
+          flex_order={true}
         />
         <ToggleBtn
           value="Trending"
@@ -38,11 +32,13 @@ export const NFT = () => {
         <GridOptions />
       </div>
       <Outlet />
-      {toggle && window.innerWidth < 960 ? (
-        <Filter onToggle={onToggle} />
+      {filterMenu && window.innerWidth < 960 ? (
+        <Filter onToggle={onFilterMenu} toggle={filterMenu} />
       ) : (
         false
       )}
     </section>
   );
 };
+
+export default NavBar;

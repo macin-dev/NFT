@@ -1,5 +1,4 @@
 export * from "./Dropdown";
-export * from "./Filter";
 export * from "./Header";
 export * from "./FilterItemsMenu";
 export * from "./Blockchain";

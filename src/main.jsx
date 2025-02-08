@@ -9,7 +9,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import { Home } from "./components/homepage/Home.jsx";
-import { NFT, NFTSection } from "./components/explore/nft/index.js";
+import { NFTSection } from "./components/explore/nft/index.js";
 import { Wallet } from "./components/connectWallet/login/index.js";
 import { Header } from "./components/collections/header/Header.jsx";
 import { Layout } from "./components/user/Layout.jsx";
@@ -18,13 +18,14 @@ import { Main } from "./pages/create/index.js";
 import { Profile } from "./pages/profile/Profile.jsx";
 import { UsersPage } from "./pages/users/index.js";
 import { Container } from "./components/collections/Container.jsx";
+import NavBar from "./components/explore/nft/Navbar.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="explore" element={<NFT />}>
+        <Route path="explore" element={<NavBar />}>
           <Route index element={<Navigate replace to="art" />} />
           <Route path="art" element={<NFTSection />} />
           <Route path="collections" element={<Container />} />
