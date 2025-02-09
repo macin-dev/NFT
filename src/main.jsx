@@ -18,14 +18,14 @@ import { Main } from "./pages/create/index.js";
 import { Profile } from "./pages/profile/Profile.jsx";
 import { UsersPage } from "./pages/users/index.js";
 import { Container } from "./components/collections/Container.jsx";
-import NavBar from "./components/explore/nft/Navbar.jsx";
+import NavBarExplore from "./components/explore/nft/NavBarExplore.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="explore" element={<NavBar />}>
+        <Route path="explore" element={<NavBarExplore />}>
           <Route index element={<Navigate replace to="art" />} />
           <Route path="art" element={<NFTSection />} />
           <Route path="collections" element={<Container />} />

@@ -8,7 +8,7 @@ import HeaderExplore from "./HeaderExplore";
 import Filter from "../filter/Filter";
 import { FilterMenuContext } from "../../../context/FilterMenuContext";
 
-const NavBar = () => {
+const NavBarExplore = () => {
   const { filterMenu, onFilterMenu } = useContext(FilterMenuContext);
 
   return (
@@ -41,4 +41,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarExplore;
