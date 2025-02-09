@@ -20,7 +20,7 @@ export const FilterItemsMenu = () => {
   };
 
   return (
-    <div className="bg-white flex flex-col gap-2 py-3 px-4 flex-grow shrink-0 basis-0 tablet:w-[18.5rem] tablet:basis-auto tablet:py-1 tablet:px-0 tablet:shrink-0 tablet:rounded-2xl tablet:border-light-border tablet:border-[0.7px]">
+    <div className="bg-white flex flex-col gap-2 py-3 px-4 flex-grow shrink-0 tablet:w-[18.5rem] tablet:flex-grow-0 tablet:py-1 tablet:px-0 tablet:shrink-0 tablet:rounded-2xl tablet:border-light-border tablet:border-[0.7px]">
       <div className="flex flex-col gap-1 py-1 flex-grow shrink-0 basis-0 self-stretch overflow-y-auto tablet:overflow-visible">
         <Dropdown
           type="Blockchain"

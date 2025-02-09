@@ -1,10 +1,11 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export const Card = ({ itemID, url, userName, text, price }) => {
+const NftCard = ({ itemID, url, userName, text, price }) => {
   return (
     <Link
       to={`/nft-detail/${itemID}`}
-      className="flex flex-col items-start rounded-2xl border-[0.7px] border-light-border bg-white tablet:h-full"
+      className="flex flex-col items-start rounded-2xl border-[0.7px] border-light-border bg-white h-full"
     >
       <div className="flex p-2 self-stretch tablet:h-[11.25rem] desktop:h-[14.75rem]">
         <img
@@ -33,3 +34,13 @@ export const Card = ({ itemID, url, userName, text, price }) => {
     </Link>
   );
 };
+
+NftCard.propTypes = {
+  itemID: PropTypes.string,
+  url: PropTypes.string,
+  userName: PropTypes.string,
+  text: PropTypes.string,
+  price: PropTypes.string,
+};
+
+export default NftCard;

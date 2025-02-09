@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const FilterMenuContext = createContext(null);
 
 export const FilterMenuProvider = ({ children }) => {
-  const [filterMenu, setFilterMenu] = useState(true);
+  const [filterMenu, setFilterMenu] = useState(false);
 
   const onFilterMenu = () => {
     setFilterMenu(!filterMenu);
