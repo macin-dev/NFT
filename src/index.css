@@ -231,6 +231,12 @@ body {
   transition: right 0.3s ease;
 }
 
+/* Transition Filter Menu */
+
+.transition-filter {
+  transition: max-width 0.1s ease;
+}
+
 .bg-profile-default {
   background: var(
     --Gradient-001,
