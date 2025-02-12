@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-export const usePreventScrolling = (isActive) => {
+export const usePreventScrolling = (screenSize) => {
   useEffect(() => {
-    if (isActive) {
+    if (screenSize === "mobile" ) {
       // Save the current overflow and height values to restore them later
       const originalBodyOverflow = document.body.style.overflow;
       const originalHtmlOverflow = document.documentElement.style.overflow;
@@ -20,5 +20,5 @@ export const usePreventScrolling = (isActive) => {
         document.body.style.height = originalBodyHeight;
       };
     }
-  }, [isActive]);
+  }, [screenSize]);
 };

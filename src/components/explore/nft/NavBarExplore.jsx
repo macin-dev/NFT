@@ -5,11 +5,10 @@ import ToggleBtn from "../../toggle/ToggleBtn";
 import GridOptions from "./GridOptions";
 import Tab from "./Tab";
 import HeaderExplore from "./HeaderExplore";
-import Filter from "../filter/Filter";
 import { FilterMenuContext } from "../../../context/FilterMenuContext";
 
 const NavBarExplore = () => {
-  const { filterMenu, onFilterMenu } = useContext(FilterMenuContext);
+  const { onFilterMenu } = useContext(FilterMenuContext);
 
   return (
     <section className="flex flex-col self-stretch w-mobile mx-auto tablet:w-tablet desktop:w-desktop">
@@ -32,11 +31,6 @@ const NavBarExplore = () => {
         <GridOptions />
       </div>
       <Outlet />
-      {filterMenu && window.innerWidth < 960 ? (
-        <Filter onToggle={onFilterMenu} toggle={filterMenu} />
-      ) : (
-        false
-      )}
     </section>
   );
 };
