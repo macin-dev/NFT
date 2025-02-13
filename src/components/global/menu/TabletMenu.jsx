@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { BlackButton_lg } from "../button";
+import { BlackButton_lg } from "../../common/button";
 import { List, Theme } from ".";
 import Navbar from "./Navbar";
 

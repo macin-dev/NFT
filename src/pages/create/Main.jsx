@@ -1,6 +1,6 @@
 import { useContext, useReducer } from "react";
 import { Dropdown, InputText, TextArea } from "../../components/global/inputs";
-import { BlackButton_xl } from "../../components/global/button/BlackButton_xl";
+import { BlackButton_xl } from "../../components/common/button/BlackButton_xl";
 import {
   Preview,
   Title,

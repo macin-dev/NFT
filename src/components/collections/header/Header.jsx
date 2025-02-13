@@ -1,4 +1,4 @@
-import { BlackButton_lg } from "../../global/button/BlackButton_lg";
+import { BlackButton_lg } from "../../common/button/BlackButton_lg";
 import { ColName } from "./ColName";
 import { Image } from "./Image";
 import { Info } from "./Info";

@@ -1,5 +1,5 @@
 import EmblaCarousel from "./CAEmblaCarousel";
-import { BlackButton_lg } from "../../global/button";
+import { BlackButton_lg } from "../../common/button";
 import { Paragraph } from "./Paragraph";
 
 export const Card = () => {

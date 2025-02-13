@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BlackButton_lg } from "../button/BlackButton_lg";
+import { BlackButton_lg } from "../../common/button/BlackButton_lg";
 import { Search } from "../search";
 import { List, Theme } from ".";
 import Navbar from "./Navbar";

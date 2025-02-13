@@ -1,4 +1,4 @@
-import { BlackButton_lg } from "../../global/button";
+import { BlackButton_lg } from "../../common/button";
 import { Image } from "./Image";
 
 export const Profile = ({ username, urlAvatar, bgURL }) => {

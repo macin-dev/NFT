@@ -1,4 +1,4 @@
-import { BlackButton_xl } from "../../components/global/button/BlackButton_xl";
+import { BlackButton_xl } from "../../components/common/button/BlackButton_xl";
 import { useCart } from "../../context/CartProvider";
 
 export const Buy = ({ id, itemPrice }) => {

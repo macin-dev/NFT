@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { BlackButton_xl } from "../../global/button";
+import { BlackButton_xl } from "../../common/button";
 import { Card } from "./card";
 
 export const Body = ({ cart }) => {

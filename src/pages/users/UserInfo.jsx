@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BlackButton_md } from "../../components/global/button";
+import { BlackButton_md } from "../../components/common/button";
 
 export const UserInfo = ({ userID, username }) => {
   return (
