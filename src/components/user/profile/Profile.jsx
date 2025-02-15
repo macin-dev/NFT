@@ -1,5 +1,5 @@
-import { BlackButton_lg } from "../../common/button";
 import { Image } from "./Image";
+import Button from "../../common/button/Button.jsx";
 
 export const Profile = ({ username, urlAvatar, bgURL }) => {
   return (
@@ -29,10 +29,11 @@ export const Profile = ({ username, urlAvatar, bgURL }) => {
             </div>
           </div>
 
-          <BlackButton_lg value="Follow" />
+          <Button size="large" color="black" value="Follow" />
+
 
           <p className="text-light-element-secondary text-[0.75rem] leading-4 tablet:order-first tablet:text-sm tablet:w-[39rem]">
-            Milady Maker is a collection of 10,000 generative pfpNFT's in a
+            Milady Maker is a collection of 10,000 generative NFT's in a
             neochibi aesthetic inspired by street style tribes.
           </p>
 

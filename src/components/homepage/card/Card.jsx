@@ -1,6 +1,7 @@
 import EmblaCarousel from "./CAEmblaCarousel";
-import { BlackButton_lg } from "../../common/button";
 import { Paragraph } from "./Paragraph";
+import Button from "../../common/button/Button.jsx";
+import ButtonIcon from "../../common/button/ButtonIcon.jsx";
 
 export const Card = () => {
   return (
@@ -8,11 +9,9 @@ export const Card = () => {
       <div className="flex flex-col w-[21.313rem] py-10 px-6 justify-center items-start gap-8 rounded-3xl bg-light-surface-purple overflow-hidden tablet:py-16 tablet:pl-10 tablet:pr-0 tablet:items-center tablet:gap-8 tablet:self-stretch tablet:rounded-3xl tablet:border-light-border tablet:w-full tablet:h-[27.5rem] tablet:flex-wrap desktop:pl-16">
         <div className="flex flex-col items-start gap-8 self-stretch tablet:gap-10">
           <Paragraph />
-          <BlackButton_lg
-            value="Explore"
-            path="/explore"
-            icon="/assets/icons/light-arrow-right.svg"
-          />
+          <Button size="large" color="black" path="/explore" value="Explore">
+            <ButtonIcon srcIcon="/assets/icons/light-arrow-right.svg" />
+          </Button>
         </div>
         <EmblaCarousel />
       </div>

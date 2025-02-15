@@ -25,9 +25,9 @@ const styles = {
     }
 }
 
-const Button = ({color, size, value, onClick, path,  children}) => {
+const Button = ({customSize, color, size, value, onClick, path,  children}) => {
     return (
-        <button onClick={onClick} style={styles[size]} className={`${color === "black" ? 'bg-light-element-primary-btn text-white' : 'bg-light-surface-secondary-btn text-light-element-primary'} w-full inline-flex items-center justify-center gap-2 cursor-pointer tablet:w-auto tablet:flex-grow tablet:shrink-0`}>
+        <button onClick={onClick} style={customSize ? customSize : styles[size]} className={`${color === "black" ? 'bg-light-element-primary-btn text-white' : 'bg-light-surface-secondary-btn text-light-element-primary'} inline-flex items-center justify-center gap-2 cursor-pointer tracking-default max-[960px]:w-full`}>
             {/*Text*/}
             {path ? <RedirectLink path={path} value={value} /> : value }
             {/*Icon */}
@@ -37,6 +37,7 @@ const Button = ({color, size, value, onClick, path,  children}) => {
 }
 
 Button.propTypes = {
+    customSize: PropTypes.object,
     color: PropTypes.string,
     size: PropTypes.string,
     value: PropTypes.string,

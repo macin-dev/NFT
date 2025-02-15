@@ -1,4 +1,7 @@
-import { CButton, CRectangle } from "./";
+import { CRectangle } from "./";
+import Button from "../../common/button/Button.jsx";
+import ButtonIcon from "../../common/button/ButtonIcon.jsx";
+
 
 export const CCard = () => {
   return (
@@ -12,8 +15,9 @@ export const CCard = () => {
             Explore new trending NFTs
           </p>
         </div>
-
-        <CButton />
+        <Button size="large" path="/sing-up" value="Get started" color="black" >
+          <ButtonIcon srcIcon="/assets/icons/light-arrow-right.svg" />
+        </Button>
       </div>
 
       <div className="flex items-center tablet:shrink-0 tablet:h-[11.375rem] tablet:justify-end tablet:pt-[1.3125rem] tablet:pr-0 tablet:pb-5 tablet:pl-[5.5625rem] desktop:p-0 desktop:pl-[5.8125rem]">
