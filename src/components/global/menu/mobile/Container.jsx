@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const Container = ({ children }) => {
-  return <div className="flex items-center gap-6">{children}</div>;
+  return <div className="flex items-center gap-6 tablet:hidden">{children}</div>;
 };
 
 Container.propTypes = {

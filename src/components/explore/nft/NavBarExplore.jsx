@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import { Search } from "../../global/search";
 import ToggleBtn from "../../toggle/ToggleBtn";
 import GridOptions from "./GridOptions";
 import Tab from "./Tab";
 import HeaderExplore from "./HeaderExplore";
 import { FilterMenuContext } from "../../../context/FilterMenuContext";
+import Search from "../../common/search/Search.jsx";
+import CommandIcon from "../../common/search/CommandIcon.jsx";
 
 const NavBarExplore = () => {
   const { onFilterMenu } = useContext(FilterMenuContext);
@@ -15,7 +16,9 @@ const NavBarExplore = () => {
       <HeaderExplore />
       <div className="flex flex-row flex-wrap items-start self-stretch p-4 gap-y-4 gap-x-3 tablet:pb-6 tablet:pt-4 tablet:px-10 desktop:p-10 desktop:pt-4 desktop:px-20 desktop:gap-x-4 desktop:flex-nowrap">
         <Tab />
-        <Search placeholder="Search" />
+        <Search size="fit" placeholder="Search" >
+            <CommandIcon />
+        </Search>
         <ToggleBtn
           onToggle={onFilterMenu}
           value="Filters"

@@ -6,13 +6,13 @@ const MenuButton = ({ menu, handleToggleMenu }) => {
     <>
       {!menu ? (
         <ActionButton
-          handlerEvent={() => handleToggleMenu(!menu)}
+          handlerEvent={() => handleToggleMenu()}
           color={false}
           pathIcon="/assets/icons/menu.svg"
         />
       ) : (
         <ActionButton
-          handlerEvent={() => handleToggleMenu(!menu)}
+          handlerEvent={() => handleToggleMenu()}
           color={false}
           pathIcon="/assets/icons/xMenu.svg"
         />
@@ -22,7 +22,7 @@ const MenuButton = ({ menu, handleToggleMenu }) => {
 };
 
 MenuButton.propTypes = {
-  menu: PropTypes.bool,
+  menu: PropTypes.string,
   handleToggleMenu: PropTypes.func,
 };
 

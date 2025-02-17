@@ -1,40 +1,21 @@
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { BlackButton_lg } from "../../common/button";
-import { List, Theme } from ".";
-import Navbar from "./Navbar";
+import NavbarLeft from "./NavbarLeft.jsx";
+import MediumSearch from "./MediumSearch.jsx";
+import CommandIcon from "../../common/search/CommandIcon.jsx";
+import NavbarRight from "./NavbarRight.jsx";
+import Search from "../../common/search/Search.jsx";
 
-export const TabletMenu = ({ onClickCart }) => {
+const TabletMenu = () => {
   return (
-    <Navbar>
-      <div className="flex items-center gap-6 flex-grow shrink-0">
-        <Link to="/">
-          <img src="/assets/Union.svg" alt="Ultrarare Logo" />
-        </Link>
-        <div className="w-[0.063rem] h-4 bg-light-border"></div>
-        <List />
-      </div>
-
-      <div className="flex items-center gap-4 flex-grow shrink-0 justify-end">
-        <div className="flex p-[0.875rem] h-12 rounded-xl bg-light-surface-soft">
-          <img src="/assets/icons/search.svg" alt="search icon" />
-        </div>
-
-        <BlackButton_lg path="/sing-up" value="Connect Wallet" />
-
-        <button
-          onClick={() => onClickCart()}
-          className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft"
-        >
-          <img src="/assets/icons/shopping-bag.svg" alt="shopping bag icon" />
-        </button>
-
-        <Theme />
-      </div>
-    </Navbar>
+    <>
+        <NavbarLeft/>
+        <MediumSearch>
+            <Search size="medium" placeholder="Type for collections, NFTs etc">
+                <CommandIcon />
+            </Search>
+        </MediumSearch>
+        <NavbarRight />
+    </>
   );
 };
 
-TabletMenu.propTypes = {
-  onClickCart: PropTypes.func,
-};
+export default TabletMenu;
