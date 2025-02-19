@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import { BlackButton_xl } from "../../common/button";
 import { Card } from "./card";
+import Button from "../../common/button/Button.jsx";
 
 export const Body = ({ cart }) => {
   return (
@@ -21,7 +21,7 @@ export const Body = ({ cart }) => {
       </div>
 
       {/* Button */}
-      <BlackButton_xl value="Buy" stretch="self-stretch" />
+        <Button color="black" size="extraLarge" value="Buy"  />
     </div>
   );
 };

@@ -1,7 +1,7 @@
-import { BlackButton_lg } from "../../common/button/BlackButton_lg";
 import { ColName } from "./ColName";
 import { Image } from "./Image";
 import { Info } from "./Info";
+import Button from "../../common/button/Button.jsx";
 
 export const Header = () => {
   return (
@@ -12,8 +12,7 @@ export const Header = () => {
         <div className="flex flex-col gap-8 self-stretch tablet:items-start tablet:gap-6">
           <ColName />
 
-          <BlackButton_lg value="Place floor bid" />
-
+          <Button size="large" color="black" value="Place floor bid" />
           <p className="text-light-element-secondary text-[0.75rem] leading-4 tablet:order-first tablet:text-sm tablet:w-[45.8125rem]">
             Phasellus pharetra porta sodales. Quisque a felis neque. Vivamus sed
             vulputate ex. Donec ullamcorper pharetra efficitur. Donec faucibus

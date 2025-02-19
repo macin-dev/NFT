@@ -38,7 +38,7 @@ const Button = ({customSize, color, size, value, onClick, path,  children, disab
 
 Button.propTypes = {
     customSize: PropTypes.object,
-    color: PropTypes.string,
+    color: PropTypes.string.isRequired,
     size: PropTypes.string,
     value: PropTypes.string,
     onClick: PropTypes.func,

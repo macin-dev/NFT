@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { BlackButton_md } from "../../components/common/button";
+import Button from "../../components/common/button/Button.jsx";
+import ButtonIcon from "../../components/common/button/ButtonIcon.jsx";
 
 export const UserInfo = ({ userID, username }) => {
   return (
@@ -35,8 +36,9 @@ export const UserInfo = ({ userID, username }) => {
             </div>
           </div>
         </div>
-
-        <BlackButton_md icon="/assets/icons/plus.svg" />
+        <Button size="medium" color="black">
+          <ButtonIcon srcIcon="/assets/icons/plus.svg" alt="Plus Icon" />
+        </Button>
       </div>
     </div>
   );
