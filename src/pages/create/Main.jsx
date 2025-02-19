@@ -1,6 +1,5 @@
 import { useContext, useReducer } from "react";
 import { Dropdown, InputText, TextArea } from "../../components/global/inputs";
-import { BlackButton_xl } from "../../components/common/button/BlackButton_xl";
 import {
   Preview,
   Title,
@@ -14,6 +13,7 @@ import { InputSelect } from "../../components/global/inputs/InputSelect";
 import { chainIcons } from "./data";
 import { PreviewCard } from "../../components/global/nftcard";
 import { CollectionContext } from "../../context/CollectionProvider";
+import Button from "../../components/common/button/Button.jsx";
 
 const initialState = {
   url: null,
@@ -95,7 +95,7 @@ export const Main = () => {
             icon={blockchainIcon}
             options={chainIcons}
           />
-          <BlackButton_xl onSubmit={onAddNewItem} value="Finish" />
+          <Button size="extraLarge" color="black" onClick={onAddNewItem} value="Finish" />
         </Form>
         {/* Preview Item Component */}
       </section>

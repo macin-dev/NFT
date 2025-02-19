@@ -1,7 +1,7 @@
-import {BlackButton_lg} from "../../common/button/index.js";
 import {Theme} from "./Theme.jsx";
 import SearchIcon from "../../common/search/SearchIcon.jsx";
 import Search from "../../common/search/Search.jsx";
+import Button from "../../common/button/Button.jsx";
 
 const NavbarRight = () => {
     return (
@@ -11,7 +11,7 @@ const NavbarRight = () => {
                     <SearchIcon />
                 </Search>
             </div>
-            <BlackButton_lg path="/sing-up" value="Connect Wallet"/>
+            <Button size="large" color="black" value="Connect Wallet" path="/sing-up" />
             <button
                 className="flex p-[0.875rem] w-[3rem] h-[3rem] rounded-xl bg-light-surface-soft"
             >

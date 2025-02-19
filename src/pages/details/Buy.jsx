@@ -1,8 +1,13 @@
-import { BlackButton_xl } from "../../components/common/button/BlackButton_xl";
 import { useCart } from "../../context/CartProvider";
+import Button from "../../components/common/button/Button.jsx";
+
+const buyBtnStyles = {height: 56, padding: "12px 24px", flexGrow: 1, shrink: 0, borderRadius: 12}
+const addBtnStyles = {width: "fit-content", padding: "12px 24px", borderRadius: 12 };
 
 export const Buy = ({ id, itemPrice }) => {
   const { addNewItem, itemsOnCart } = useCart();
+  const btnState = itemsOnCart[id];
+
   return (
     <div className="bg-light-surface-soft flex flex-col p-3 gap-3 justify-center self-stretch rounded-2xl">
       <div className="flex flex-col items-start gap-1 p-4 self-stretch">
@@ -27,12 +32,10 @@ export const Buy = ({ id, itemPrice }) => {
 
       <div className="flex flex-col gap-3 self-stretch">
         <div className="flex gap-3 self-stretch">
-          <BlackButton_xl value="Buy now" grow="flex-grow" />
-          <BlackButton_xl
-            icon="/assets/icons/plus.svg"
-            onEventHandler={() => addNewItem(id)}
-            onCart={itemsOnCart[id]}
-          />
+          <Button customSize={buyBtnStyles} value="Buy now" color="black" />
+          <Button customSize={addBtnStyles} color="black" disabled={btnState} onClick={() => addNewItem(id)}>
+            <img src="/assets/icons/plus.svg" alt="plus icon" />
+          </Button>
         </div>
 
         <button className="h-[3.125rem] flex items-center justify-center py-3.5 self-stretch">
