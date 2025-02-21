@@ -2,6 +2,16 @@ import { Link } from "react-router-dom";
 import Button from "../../components/common/button/Button.jsx";
 import ButtonIcon from "../../components/common/button/ButtonIcon.jsx";
 
+const styles = {
+  width: "fit-content",
+  height: 36,
+  padding: "8px 12px",
+  borderRadius: 8,
+  fontSize: 14,
+  lineHeight: "20px",
+}
+
+
 export const UserInfo = ({ userID, username }) => {
   return (
     <div className="flex flex-col pt-6 px-3 pb-4 self-stretch">
@@ -36,7 +46,7 @@ export const UserInfo = ({ userID, username }) => {
             </div>
           </div>
         </div>
-        <Button size="medium" color="black">
+        <Button customSize={styles} color="black">
           <ButtonIcon srcIcon="/assets/icons/plus.svg" alt="Plus Icon" />
         </Button>
       </div>

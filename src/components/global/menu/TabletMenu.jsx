@@ -1,10 +1,11 @@
+import PropTypes from "prop-types";
 import NavbarLeft from "./NavbarLeft.jsx";
 import MediumSearch from "./MediumSearch.jsx";
 import CommandIcon from "../../common/search/CommandIcon.jsx";
 import NavbarRight from "./NavbarRight.jsx";
 import Search from "../../common/search/Search.jsx";
 
-const TabletMenu = () => {
+const TabletMenu = ({ onClickCart }) => {
   return (
     <>
         <NavbarLeft/>
@@ -13,9 +14,13 @@ const TabletMenu = () => {
                 <CommandIcon />
             </Search>
         </MediumSearch>
-        <NavbarRight />
+        <NavbarRight onClickCart={onClickCart} />
     </>
   );
 };
+
+TabletMenu.propTypes = {
+    onClickCart: PropTypes.func,
+}
 
 export default TabletMenu;

@@ -39,7 +39,7 @@ export const MobileMenu = ({ onClickCart, cart }) => {
       </Container>
       <Container>
         <ActionButton
-          // handlerEvent={onClickCart}
+          handlerEvent={onClickCart}
           color={true}
           pathIcon="/assets/icons/shopping-bag.svg"
         />

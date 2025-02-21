@@ -4,24 +4,25 @@ import { usePreventScrolling } from "../../../helper/usePreventScrolling";
 import { useResize } from "../../../helper/useResize";
 import Header from "./Header.jsx";
 import TabletMenu from "./TabletMenu.jsx";
+import {Cart} from "../../cart/index.js";
 
 export const Menu = () => {
-  const [cart, setCart] = useState("");
+  const [cart, setCart] = useState(false);
   const { documentSize } = useResize();
 
   const onClickCart = () => {
-    if(!cart) {
-      setCart("mobile");
-    } else {
-      setCart("");
-    }
+    setCart(!cart);
   };
 
   usePreventScrolling(cart);
 
   return (
-      <Header>
+      <>
+        <Header>
           {documentSize !== "mobile" ? <TabletMenu onClickCart={onClickCart} /> : <MobileMenu onClickCart={onClickCart} />}
-      </Header>
+        </Header>
+        {cart ? <Cart onClickCart={onClickCart} /> : null }
+      </>
+
   );
 };
