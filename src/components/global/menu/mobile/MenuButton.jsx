@@ -22,7 +22,7 @@ const MenuButton = ({ menu, handleToggleMenu }) => {
 };
 
 MenuButton.propTypes = {
-  menu: PropTypes.string,
+  menu: PropTypes.bool,
   handleToggleMenu: PropTypes.func,
 };
 
