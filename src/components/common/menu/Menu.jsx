@@ -1,13 +1,13 @@
 import {useEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
-import { useResize } from "../../../helper/useResize";
+import { useResize } from "../../../helper/useResize.js";
 import {usePreventScrolling} from "../../../helper/index.js";
-import { MobileMenu } from "./";
-import TabletMenu from "./TabletMenu.jsx";
 import {Cart} from "../../cart/index.js";
 import Header from "./Header.jsx";
+import TabletMenu from "./tablet/TabletMenu.jsx";
+import MobileMenu from "./mobile/MobileMenu.jsx";
 
-export const Menu = () => {
+const Menu = () => {
   const [cart, setCart] = useState(false);
     const [menu, setMenu] = useState(false);
     const { documentSize } = useResize();
@@ -38,3 +38,5 @@ export const Menu = () => {
 
   );
 };
+
+export default Menu;

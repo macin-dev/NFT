@@ -1,3 +1,2 @@
-export * from "./menu";
-export * from "./footer";
+export * from "../common/footer";
 export * from "./tab";

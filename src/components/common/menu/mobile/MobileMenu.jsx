@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import Container from "./mobile/Container";
-import MenuLogo from "./mobile/MenuLogo";
-import Search from "./mobile/Search";
-import ActionButton from "../ActionButton";
-import Navbar from "./Navbar";
-import DisplayMobileMenu from "./mobile/DisplayMobileMenu";
-import MenuButton from "./mobile/MenuButton";
+import Container from "./Container.jsx";
+import MenuLogo from "./MenuLogo.jsx";
+import Search from "./Search.jsx";
+import ActionButton from "../../../global/ActionButton.jsx";
+import Navbar from "../Navbar.jsx";
+import DisplayMobileMenu from "./DisplayMobileMenu.jsx";
+import MenuButton from "./MenuButton.jsx";
 
-export const MobileMenu = ({ onClickCart, menu, handleToggleMenu }) => {
+const MobileMenu = ({ onClickCart, menu, handleToggleMenu }) => {
     return (
     <Navbar>
       <Container>
@@ -26,6 +26,8 @@ export const MobileMenu = ({ onClickCart, menu, handleToggleMenu }) => {
     </Navbar>
   );
 };
+
+export default MobileMenu;
 
 MobileMenu.propTypes = {
   onClickCart: PropTypes.func,

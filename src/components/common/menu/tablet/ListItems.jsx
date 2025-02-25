@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export const List = () => {
+const ListItems = () => {
   return (
     <ul className="flex items-center gap-6">
       <NavLink
@@ -21,3 +21,5 @@ export const List = () => {
     </ul>
   );
 };
+
+export default  ListItems;

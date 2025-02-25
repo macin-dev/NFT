@@ -1,4 +1,4 @@
-export const BottomBar = () => {
+const BottomBar = () => {
   return (
     <div className="flex flex-col gap-6 self-stretch tablet:flex-row tablet:justify-between">
       <p className="text-light-element-secondary text-[0.75rem] leading-4 text-center">
@@ -18,3 +18,5 @@ export const BottomBar = () => {
     </div>
   );
 };
+
+export default BottomBar;

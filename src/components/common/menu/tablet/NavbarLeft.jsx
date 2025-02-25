@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {List} from "./List.jsx";
+import ListItems from "./ListItems.jsx";
 
 const NavbarLeft = () => {
     return (
@@ -8,7 +8,7 @@ const NavbarLeft = () => {
                 <img src="/assets/Union.svg" alt="Ultrarare Logo"/>
             </Link>
             <div className="w-[0.063rem] h-4 bg-light-border"></div>
-            <List/>
+            <ListItems />
         </div>
     )
 }

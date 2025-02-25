@@ -1,4 +1,4 @@
-export const Group = ({ title, text1, text2, text3 }) => {
+const Group = ({ title, text1, text2, text3 }) => {
   return (
     <div className="flex flex-gro flex-col gap-3 w-[10.6875rem] tablet:w-[11.75rem]">
       <h3 className="text-light-element-primary text-[1rem] font-semibold leading-6 tracking-[0.0125rem]">
@@ -16,3 +16,5 @@ export const Group = ({ title, text1, text2, text3 }) => {
     </div>
   );
 };
+
+export default Group;

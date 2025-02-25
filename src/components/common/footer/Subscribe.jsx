@@ -1,9 +1,9 @@
-import Button from "../../common/button/Button.jsx";
-import ButtonIcon from "../../common/button/ButtonIcon.jsx";
+import Button from "../button/Button.jsx";
+import ButtonIcon from "../button/ButtonIcon.jsx";
 
 const customSize = {fontSize: 14, padding: "8px 16px", borderRadius: "8px", height: "100%"}
 
-export const Suscribe = () => {
+const Subscribe = () => {
   return (
     <div className="flex flex-col gap-10 py-6 justify-center self-stretch border-t border-b border-t-light-border border-b-light-border tablet:flex-row tablet:py-10">
       <div className="flex flex-col gap-3 flex-grow flex-shrink-0 self-stretch">
@@ -28,3 +28,5 @@ export const Suscribe = () => {
     </div>
   );
 };
+
+export default Subscribe;

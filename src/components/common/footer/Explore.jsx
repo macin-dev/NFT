@@ -1,6 +1,8 @@
-import { Group } from "./";
+// import { Group } from "./index.js";
 
-export const Explore = () => {
+import Group from "./Group.jsx";
+
+const Explore = () => {
   return (
     <div className="flex flex-col tablet:flex-grow items-start gap-10 self-stretch tablet:flex-row tablet:gap-2.5">
       <div className="tablet:flex-grow tablet:shrink-0 tablet:w-6 tablet:h-[1.625rem]">
@@ -22,3 +24,5 @@ export const Explore = () => {
     </div>
   );
 };
+
+export default Explore;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import UnorderedList from "./UnorderedList";
+import UnorderedList from "./UnorderedList.jsx";
 
 const DisplayMobileMenu = () => {
   const [transition, setTransition] = useState(false);
