@@ -1,4 +1,6 @@
-export const ImageItem = ({ url, title, text }) => {
+import PropTypes from "prop-types";
+
+const ImageItem = ({ url, title, text }) => {
   return (
     <div
       className={`${url} p-4 rounded-2xl flex flex-col justify-end items-start gap-1 w-[19.438rem] h-[20rem] tablet:w-[11.938rem] tablet:h-[12.75rem] desktop:w-[19.438rem] desktop:h-[20rem]`}
@@ -10,3 +12,11 @@ export const ImageItem = ({ url, title, text }) => {
     </div>
   );
 };
+
+ImageItem.propTypes = {
+  url: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
+}
+
+export default ImageItem;

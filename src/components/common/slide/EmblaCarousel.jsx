@@ -1,5 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
-import { ImageItem } from "./ImageItem";
+import ImageItem from "./ImageItem.jsx";
 
 const images = [
   {
@@ -28,8 +28,8 @@ const images = [
   },
 ];
 
-export const EmblaCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+const EmblaCarousel = () => {
+  const [emblaRef] = useEmblaCarousel({ loop: true });
 
   return (
     <section className="embla tablet:px-20 desktop:max-w-[90rem] desktop:h-[20rem]">
@@ -45,3 +45,5 @@ export const EmblaCarousel = () => {
     </section>
   );
 };
+
+export default EmblaCarousel;
