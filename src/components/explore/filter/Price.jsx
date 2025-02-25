@@ -1,4 +1,4 @@
-import ToggleBtn from "../../toggle/ToggleBtn";
+import ToggleBtn from "../../common/toggle/ToggleBtn";
 import { Price_input } from "./Price_input";
 
 export const Price = () => {

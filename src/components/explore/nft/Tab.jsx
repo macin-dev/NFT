@@ -1,4 +1,4 @@
-import TabWhite from "../../tab/white/TabWhite";
+import TabWhite from "../../common/tab/white/TabWhite";
 
 const tab_options = [
   { id: Math.random(), path: "art", value: "Explore" },

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import ToggleBtn from "../../toggle/ToggleBtn";
+import ToggleBtn from "../../common/toggle/ToggleBtn";
 import GridOptions from "./GridOptions";
 import Tab from "./Tab";
 import HeaderExplore from "./HeaderExplore";

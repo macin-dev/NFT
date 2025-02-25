@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import Badge from "./Badge";
-import PlusIcon from "./PlusIcon";
+import Badge from "./Badge.jsx";
+import PlusIcon from "./PlusIcon.jsx";
 
 const style = {
   small: {
