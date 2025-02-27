@@ -1,6 +1,6 @@
-import { CRectangle } from "./";
 import Button from "../../common/button/Button.jsx";
 import ButtonIcon from "../../common/button/ButtonIcon.jsx";
+import TrendingCardExample from "../../common/trending-card-example/TrendingCardExample.jsx";
 
 
 export const CCard = () => {
@@ -22,17 +22,17 @@ export const CCard = () => {
 
       <div className="flex items-center tablet:shrink-0 tablet:h-[11.375rem] tablet:justify-end tablet:pt-[1.3125rem] tablet:pr-0 tablet:pb-5 tablet:pl-[5.5625rem] desktop:p-0 desktop:pl-[5.8125rem]">
         <div className="flex flex-col items-center relative w-[18.4375rem] h-[8.8125rem] desktop:w-[29.1875rem] desktop:h-[11.375rem]">
-          <CRectangle
+          <TrendingCardExample
             url="./assets/cards/card2.jpeg"
             width="w-[16.0625rem] desktop:w-[27.1875rem]"
             position="top-[3.125rem]"
           />
-          <CRectangle
+          <TrendingCardExample
             url="./assets/cards/card1.jpeg"
             width="w-[17.5625rem] desktop:w-[28.4375rem]"
             position="top-[1.5625rem]"
           />
-          <CRectangle
+          <TrendingCardExample
             url="./assets/cards/card3.jpeg"
             width="w-[18.4375rem] desktop:w-full"
           />

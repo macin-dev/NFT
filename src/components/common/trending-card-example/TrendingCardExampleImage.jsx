@@ -1,4 +1,6 @@
-export const CRectangle_Image = ({ url }) => {
+import PropTypes from "prop-types";
+
+const TrendingCardExampleImage = ({ url }) => {
   return (
     <div className="flex h-[5.8125rem] p-2 flex-col items-center desktop:h-[8.375rem]">
       <img
@@ -9,3 +11,9 @@ export const CRectangle_Image = ({ url }) => {
     </div>
   );
 };
+
+TrendingCardExampleImage.propTypes = {
+    url: PropTypes.string.isRequired
+}
+
+export default TrendingCardExampleImage;

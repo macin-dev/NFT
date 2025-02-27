@@ -1,4 +1,6 @@
-export const CRectangle_Item = ({ text }) => {
+import PropTypes from "prop-types";
+
+const TrendingCardExampleText = ({ text }) => {
   return (
     <div className="flex flex-col items-start gap-1 flex-grow flex-shrink-0">
       <p className="text-[0.75rem] leading-[1.125rem] text-light-element-secondary">
@@ -8,3 +10,9 @@ export const CRectangle_Item = ({ text }) => {
     </div>
   );
 };
+
+TrendingCardExampleText.propTypes = {
+    text: PropTypes.string,
+}
+
+export default TrendingCardExampleText;
