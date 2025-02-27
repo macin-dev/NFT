@@ -4,7 +4,7 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "./EmblaCarouselButtons";
-import { NFTCard } from ".";
+import CardCarousel from "../../common/card-carousel/CardCarousel.jsx";
 
 const cards = [
   {
@@ -45,7 +45,7 @@ const cards = [
   },
 ];
 
-const CAEmblaCarousel = () => {
+const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "start", loop: true });
 
   const {
@@ -61,8 +61,8 @@ const CAEmblaCarousel = () => {
         <div className="embla__container-card">
           {cards.map((card) => (
             <div className="embla__slide-card" key={card.id}>
-              <NFTCard
-                profile={card.profile}
+              <CardCarousel
+                userName={card.profile}
                 title={card.bodyText.one}
                 price={card.bodyText.two}
                 url={card.url}
@@ -77,4 +77,4 @@ const CAEmblaCarousel = () => {
   );
 };
 
-export default CAEmblaCarousel;
+export default EmblaCarousel;

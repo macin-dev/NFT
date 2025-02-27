@@ -1,4 +1,4 @@
-import EmblaCarousel from "./CAEmblaCarousel";
+import EmblaCarousel from "./EmblaCarousel.jsx";
 import { Paragraph } from "./Paragraph";
 import Button from "../../common/button/Button.jsx";
 import ButtonIcon from "../../common/button/ButtonIcon.jsx";

@@ -1,4 +1,6 @@
-export const CardImage = ({ url }) => {
+import PropTypes from "prop-types";
+
+const CardImage = ({ url }) => {
   return (
     <img
       className="flex p-2 flex-col justify-end items-center gap-2.5 flex-grow self-stretch rounded-xl tablet:h-[17.75rem] tablet:object-cover"
@@ -7,3 +9,9 @@ export const CardImage = ({ url }) => {
     />
   );
 };
+
+CardImage.propTypes = {
+  url: PropTypes.string,
+}
+
+export default CardImage;
