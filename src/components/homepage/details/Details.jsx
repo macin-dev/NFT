@@ -11,12 +11,12 @@ export const Details = () => {
             <FourImagesGrid height="h-[24.25rem]">
                 <div
                     className="flex flex-col gap-2.5 mt-3.5">
-                    <ImageItem url="./assets/home1.jpeg" width="w-[10.625rem]" height="h-[12.3125rem]"/>
-                    <ImageItem url="./assets/home4.jpeg" width="w-[10.625rem]" height="h-[10.625rem]"/>
+                    <ImageItem url="https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/nft-hero-1.jpeg" width="w-[10.625rem]" height="h-[12.3125rem]"/>
+                    <ImageItem url="https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/nft-hero-4.jpeg" width="w-[10.625rem]" height="h-[10.625rem]"/>
                 </div>
                 <div className="flex flex-col gap-2.5">
-                    <ImageItem url="./assets/home2.jpeg" width="w-[10.625rem]" height="h-[10.625rem]"/>
-                    <ImageItem url="./assets/home3.jpeg" width="w-[10.625rem]" height="h-[13rem]"/>
+                    <ImageItem url="https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/nft-hero-2.jpeg" width="w-[10.625rem]" height="h-[10.625rem]"/>
+                    <ImageItem url="https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/nft-hero-3.jpeg" width="w-[10.625rem]" height="h-[13rem]"/>
                 </div>
             </FourImagesGrid>
         </div>
