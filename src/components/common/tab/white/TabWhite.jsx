@@ -8,15 +8,12 @@ const navLinkStyles =
 const sizeTab = {
     small: {
         padding: "8px 12px",
-        height: "37px",
     },
     medium: {
         padding: "12px 16px",
-        height: "44px",
     },
     large: {
         padding: "16px 20px",
-        height: "56px",
     }
 }
 
