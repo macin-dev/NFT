@@ -10,7 +10,7 @@ const cards = [
   {
     id: 1,
     profile: "Winter Madagascar",
-    url: "./assets/cards/card1.jpeg",
+    url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/cards/card1.jpeg",
     bodyText: {
       one: "Clown Ape",
       two: "0.002 ETH",
@@ -19,7 +19,7 @@ const cards = [
   {
     id: 2,
     profile: "Winter Madagascar",
-    url: "./assets/cards/card2.jpeg",
+    url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/cards/card2.jpeg",
     bodyText: {
       one: "Clown Ape",
       two: "0.002 ETH",
@@ -28,7 +28,7 @@ const cards = [
   {
     id: 3,
     profile: "Winter Madagascar",
-    url: "./assets/cards/card3.jpeg",
+    url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/cards/card3.jpeg",
     bodyText: {
       one: "Clown Ape",
       two: "0.002 ETH",
@@ -37,7 +37,7 @@ const cards = [
   {
     id: 4,
     profile: "Winter Madagascar",
-    url: "./assets/cards/card2.jpeg",
+    url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/cards/card4.jpeg",
     bodyText: {
       one: "Clown Ape",
       two: "0.002 ETH",

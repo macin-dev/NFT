@@ -16,7 +16,7 @@ export default function Card({ url, title, name, price, itemID }) {
           <h3 className="text-light-element-secondary flex gap-1 text-[0.75rem] leading-4">
             <img
               className="w-4 h-4"
-              src="/assets/cards/verify.svg"
+              src="/assets/icons/verify.svg"
               alt="Verify Icon"
             />
             {title}

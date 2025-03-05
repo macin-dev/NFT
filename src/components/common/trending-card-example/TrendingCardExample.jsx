@@ -15,7 +15,7 @@ export const TrendingCardExample = ({ url, width, position }) => {
         <div className="hidden desktop:flex desktop:items-center desktop:gap-2">
           <img
             className="w-6 h-6 rounded-[2.625rem]"
-            src="/assets/cards/profile.jpeg"
+            src="https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/cards/card1.jpeg"
             alt="Profile Image"
           />
           <p className="desktop:text-sm tracking-[-0.0125rem] text-light-element-secondary">

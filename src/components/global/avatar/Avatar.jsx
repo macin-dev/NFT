@@ -4,7 +4,7 @@ export const Avatar = () => {
       <div className="flex w-12 h-12 items-center justify-center">
         <img
           className="w-full h-full rounded-xl"
-          src="/assets/trending/profile1.jpeg"
+          src="https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/cards/profile.jpeg"
           alt="NFT user avatar"
         />
       </div>

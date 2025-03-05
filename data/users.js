@@ -4,7 +4,7 @@ export const users = [
     username: "Goat Gaming",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background1.jpeg",
-    avatar: "/assets/users/user1.jpeg",
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user1.jpeg",
     vault: [
       {
         ultIId: "ULT3902",
@@ -97,7 +97,7 @@ export const users = [
     username: "Valhalla",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background2.jpeg",
-    avatar: "/assets/users/user2.jpeg",
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user2.jpeg",
     vault: [
       {
         ultIId: "ULT35677",
@@ -173,11 +173,96 @@ export const users = [
   },
   {
     id: 579456,
-    username: "Mary Barton",
+    username: "Akutars",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background3.jpeg",
-    avatar: "/assets/users/user3.jpeg",
-    vault: [],
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user3.jpeg",
+    vault: [
+      {
+        ultIId: "ULT01877",
+        itemName: "#1443",
+        asset:
+            "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-1.avif",
+        price: "0.0685",
+        blockchain: "ethereum",
+        putOnMarketplace: true,
+        optionPrice: {
+          fixed: true,
+          timed: false,
+        },
+        unlockable: false,
+      },
+      {
+        ultIId: "ULT35628",
+        itemName: "#1183",
+        asset:
+            "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-2.avif",
+        price: "0.0685",
+        blockchain: "ethereum",
+        putOnMarketplace: true,
+        optionPrice: {
+          fixed: true,
+          timed: false,
+        },
+        unlockable: false,
+      },
+      {
+        ultIId: "ULT90656",
+        itemName: "#1946",
+        asset:
+            "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-3.avif",
+        price: "0.0685",
+        blockchain: "ethereum",
+        putOnMarketplace: true,
+        optionPrice: {
+          fixed: true,
+          timed: false,
+        },
+        unlockable: false,
+      },
+      {
+        ultIId: "ULT81583",
+        itemName: "#0098",
+        asset:
+            "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-4.avif",
+        price: "0.0685",
+        blockchain: "ethereum",
+        putOnMarketplace: true,
+        optionPrice: {
+          fixed: true,
+          timed: false,
+        },
+        unlockable: false,
+      },
+      {
+        ultIId: "ULT88879",
+        itemName: "#9981",
+        asset:
+            "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-5.avif",
+        price: "0.0685",
+        blockchain: "ethereum",
+        putOnMarketplace: true,
+        optionPrice: {
+          fixed: true,
+          timed: false,
+        },
+        unlockable: false,
+      },
+      {
+        ultIId: "ULT11124",
+        itemName: "#7733",
+        asset:
+            "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-6.avif",
+        price: "0.0685",
+        blockchain: "ethereum",
+        putOnMarketplace: true,
+        optionPrice: {
+          fixed: true,
+          timed: false,
+        },
+        unlockable: false,
+      },
+    ],
   },
 
   {
@@ -185,7 +270,7 @@ export const users = [
     username: "Stephen Underwood",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background4.jpeg",
-    avatar: "/assets/users/user4.jpeg",
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user4.jpeg",
     vault: [],
   },
 
@@ -194,7 +279,7 @@ export const users = [
     username: "Madeline Thomson",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background5.jpeg",
-    avatar: "/assets/users/user5.jpeg",
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user5.jpeg",
     vault: [],
   },
   {
@@ -202,7 +287,7 @@ export const users = [
     username: "Vicky Penny",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background6.jpeg",
-    avatar: "/assets/users/user6.jpeg",
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user6.jpeg",
     vault: [],
   },
   {
@@ -210,7 +295,7 @@ export const users = [
     username: "Chris Bland",
     bgURL:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/background7.jpeg",
-    avatar: "/assets/users/user7.jpeg",
+    avatar: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/users/user7.jpeg",
     vault: [],
   },
 ];

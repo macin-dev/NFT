@@ -1,29 +1,29 @@
 export const users = {
   collection_1: [
     {
-      url: "./assets/trending/row1.png",
+      url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/trending/trending-picture-1.png",
       name: "GoddesEirene",
     },
     {
-      url: "./assets/trending/row2.png",
+      url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/trending/trending-picture-2.png",
       name: "Madman",
     },
     {
-      url: "./assets/trending/row3.png",
+      url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/trending/trending-picture-3.png",
       name: "Winter Madagascar",
     },
   ],
   collection_2: [
     {
-      url: "./assets/trending/row4.png",
+      url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/trending/trending-picture-4.png",
       name: "SpaceExplorer",
     },
     {
-      url: "./assets/trending/row5.png",
+      url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/trending/trending-picture-5.png",
       name: "GoddesEirene",
     },
     {
-      url: "./assets/trending/row6.png",
+      url: "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/trending/trending-picture-5.png",
       name: "Madman",
     },
   ],

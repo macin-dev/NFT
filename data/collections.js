@@ -164,4 +164,94 @@ export const vault = [
     },
     unlockable: false,
   },
+  {
+    ultIId: "ULT01877",
+    userName: "Ukutars",
+    itemName: "#1443",
+    asset:
+        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-1.avif",
+    price: "0.0685",
+    blockchain: "ethereum",
+    putOnMarketplace: true,
+    optionPrice: {
+      fixed: true,
+      timed: false,
+    },
+    unlockable: false,
+  },
+  {
+    ultIId: "ULT35628",
+    userName: "Ukutars",
+    itemName: "#1183",
+    asset:
+        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-2.avif",
+    price: "0.0685",
+    blockchain: "ethereum",
+    putOnMarketplace: true,
+    optionPrice: {
+      fixed: true,
+      timed: false,
+    },
+    unlockable: false,
+  },
+  {
+    ultIId: "ULT90656",
+    userName: "Ukutars",
+    itemName: "#1946",
+    asset:
+        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-3.avif",
+    price: "0.0685",
+    blockchain: "ethereum",
+    putOnMarketplace: true,
+    optionPrice: {
+      fixed: true,
+      timed: false,
+    },
+    unlockable: false,
+  },
+  {
+    ultIId: "ULT81583",
+    userName: "Ukutars",
+    itemName: "#0098",
+    asset:
+        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-4.avif",
+    price: "0.0685",
+    blockchain: "ethereum",
+    putOnMarketplace: true,
+    optionPrice: {
+      fixed: true,
+      timed: false,
+    },
+    unlockable: false,
+  },
+  {
+    ultIId: "ULT88879",
+    userName: "Ukutars",
+    itemName: "#9981",
+    asset:
+        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-5.avif",
+    price: "0.0685",
+    blockchain: "ethereum",
+    putOnMarketplace: true,
+    optionPrice: {
+      fixed: true,
+      timed: false,
+    },
+    unlockable: false,
+  },
+  {
+    ultIId: "ULT11124",
+    userName: "Ukutars",
+    itemName: "#7733",
+    asset:
+        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-6.avif",
+    price: "0.0685",
+    blockchain: "ethereum",
+    putOnMarketplace: true,
+    optionPrice: {
+      fixed: true,
+      timed: false,
+    },
+    unlockable: false,
+  },
 ];

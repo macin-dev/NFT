@@ -4,7 +4,7 @@ export const CButton = () => {
       <p className="text-sm tracking-[-0.2px] text-white">Get started</p>
       <div className="flex items-center justify-center w-6 h-6 p-1">
         <img
-          src="./assets/icons/light-arrow-right.svg"
+          src="/assets/icons/light-arrow-right.svg"
           alt="Arrow Right Icon"
         />
       </div>

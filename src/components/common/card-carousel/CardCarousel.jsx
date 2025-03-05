@@ -7,7 +7,7 @@ const CardCarousel = ({ price, userName, title, url}) => {
       <CardImage url={url} />
       <div className="flex pt-1 px-4 pb-3 flex-col items-start gap-3 self-stretch">
         <h3 className="flex items-center gap-1 text-light-element-secondary text-[0.75rem] leading-4">
-          <img src="/assets/cards/verify.svg" alt="Verify Icon" />
+          <img src="/assets/icons/verify.svg" alt="Verify Icon" />
           {userName}
         </h3>
         <p className="text-light-element-primary text-sm font-medium leading-6 tracking-[-0.012rem]">
