@@ -8,7 +8,6 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { Home } from "./components/homepage/Home.jsx";
 import { NFTSection } from "./components/explore/nft/index.js";
 import { Wallet } from "./components/connectWallet/login/index.js";
 import { Header } from "./components/collections/header/Header.jsx";
@@ -19,6 +18,7 @@ import { Profile } from "./pages/profile/Profile.jsx";
 import { UsersPage } from "./pages/users/index.js";
 import { Container } from "./components/collections/Container.jsx";
 import NavBarExplore from "./components/explore/nft/NavBarExplore.jsx";
+import Home from "./pages/home/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

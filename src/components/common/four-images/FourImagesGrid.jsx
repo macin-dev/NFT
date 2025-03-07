@@ -1,4 +1,4 @@
-import { GreenRectangle } from "../../homepage/banner/index.js";
+import { GreenRectangle } from "../../../pages/home/banner/index.js";
 import SquareBorder from "./SquareBorder.jsx";
 import PropTypes from "prop-types";
 
