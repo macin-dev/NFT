@@ -1,4 +1,4 @@
-import { Input } from ".";
+import { Input } from "./index.js";
 
 export const Field = ({ id, name, type, placeholder }) => {
   return (

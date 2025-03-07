@@ -1,5 +1,3 @@
-// import { Group } from "./index.js";
-
 import Group from "./Group.jsx";
 
 const Explore = () => {

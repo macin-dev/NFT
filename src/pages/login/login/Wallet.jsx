@@ -1,4 +1,4 @@
-import { WalletOptions, Headline, Rectangle } from ".";
+import { WalletOptions, Headline, Rectangle } from "./index.js";
 
 export const Wallet = () => {
   return (

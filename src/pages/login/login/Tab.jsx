@@ -1,4 +1,4 @@
-import { TabItem } from "./TabItem";
+import { TabItem } from "./TabItem.jsx";
 
 export const Tab = () => {
   return (

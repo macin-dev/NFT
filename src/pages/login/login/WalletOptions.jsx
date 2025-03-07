@@ -1,4 +1,4 @@
-import { WalletItem } from "./";
+import { WalletItem } from "./index.js";
 
 const loginMethods = [
   {

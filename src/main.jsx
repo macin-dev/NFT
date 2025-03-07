@@ -9,7 +9,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import { NFTSection } from "./components/explore/nft/index.js";
-import { Wallet } from "./components/connectWallet/login/index.js";
+import { Wallet } from "./pages/login/login/index.js";
 import { Header } from "./components/collections/header/Header.jsx";
 import { Layout } from "./components/user/Layout.jsx";
 import { Details } from "./pages/details/Details.jsx";

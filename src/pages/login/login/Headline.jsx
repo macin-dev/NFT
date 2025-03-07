@@ -1,4 +1,4 @@
-import { Tab } from "./";
+import { Tab } from "./index.js";
 
 export const Headline = () => {
   return (
