@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { useCart } from "../../context/CartProvider";
-import { Body } from "./body/Body";
-import { Header } from "./header/Header";
+import { useCart } from "../../../context/CartProvider.jsx";
+import { Body } from "./body/Body.jsx";
+import { Header } from "./header/Header.jsx";
 
 export const Cart = ({ onClickCart }) => {
     const { cart } = useCart();

@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
 import { useResize } from "../../../helper/useResize.js";
 import {usePreventScrolling} from "../../../helper/index.js";
-import {Cart} from "../../cart/index.js";
+import {Cart} from "../cart/index.js";
 import Header from "./Header.jsx";
 import TabletMenu from "./tablet/TabletMenu.jsx";
 import MobileMenu from "./mobile/MobileMenu.jsx";

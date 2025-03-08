@@ -1,8 +1,8 @@
 import {useContext} from "react";
 import {useResize} from "../../../helper/useResize.js";
 import {usePreventScrolling} from "../../../helper/index.js";
-import { FilterMenuContext } from "../../../context/FilterMenuContext";
-import GridView from "./GridView";
+import { FilterMenuContext } from "../../../context/FilterMenuContext.jsx";
+import GridView from "./GridView.jsx";
 import Filter from "../filter/Filter.jsx";
 
 export const NFTSection = () => {

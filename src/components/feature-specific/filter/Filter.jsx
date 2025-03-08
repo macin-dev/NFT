@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Header, FilterItemsMenu } from "./";
+import { Header, FilterItemsMenu } from "./index.js";
 
 const Filter = ({ onToggle, documentSize }) => {
   return (

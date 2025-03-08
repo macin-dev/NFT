@@ -3,7 +3,7 @@ import { Card } from "./card/index.js";
 import { CTA } from "./cta/index.js";
 import { Details } from "./details/index.js";
 import { Trending } from "./trending/index.js";
-import EmblaCarousel from "../../components/common/slide/EmblaCarousel.jsx";
+import EmblaCarousel from "../../components/feature-specific/slide/EmblaCarousel.jsx";
 
 const Home = () => {
   return (

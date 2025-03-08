@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import { Card } from "./card";
-import Button from "../../common/button/Button.jsx";
+import { Card } from "./card/index.js";
+import Button from "../../../common/button/Button.jsx";
 
 export const Body = ({ cart }) => {
   return (

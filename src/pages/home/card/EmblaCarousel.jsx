@@ -4,7 +4,7 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "./EmblaCarouselButtons.jsx";
-import CardCarousel from "../../../components/common/card-carousel/CardCarousel.jsx";
+import CardCarousel from "../../../components/feature-specific/card-carousel/CardCarousel.jsx";
 
 const cards = [
   {

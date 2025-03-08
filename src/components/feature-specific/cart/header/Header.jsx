@@ -1,5 +1,5 @@
-import { CloseBtn } from "./CloseBtn";
-import { Indicator } from "./Indicator";
+import { CloseBtn } from "./CloseBtn.jsx";
+import { Indicator } from "./Indicator.jsx";
 
 export const Header = ({ onClickCart, cartLength }) => {
   return (

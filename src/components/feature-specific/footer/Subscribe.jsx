@@ -1,5 +1,5 @@
-import Button from "../button/Button.jsx";
-import ButtonIcon from "../button/ButtonIcon.jsx";
+import Button from "../../common/button/Button.jsx";
+import ButtonIcon from "../../common/button/ButtonIcon.jsx";
 
 const customSize = {fontSize: 14, padding: "8px 16px", borderRadius: "8px", height: "100%"}
 

@@ -1,8 +1,8 @@
-import { statusOpt } from "./data";
-import { Selected, Unselected } from "../../global/filters";
-import { useDropdown } from "../hooks/useDropdown";
+import { categoryOpt } from "./data.js";
+import { Selected, Unselected } from "../../global/filters/index.js";
+import { useDropdown } from "../../../hooks/useDropdown.js";
 
-export const Status = () => {
+export const Category = () => {
   const { selected, handleSelected } = useDropdown({
     opt_1: false,
     opt_2: false,
@@ -13,18 +13,18 @@ export const Status = () => {
 
   return (
     <div className="flex flex-col px-2 gap-1 self-stretch">
-      {statusOpt.map((s, i) =>
+      {categoryOpt.map((c, i) =>
         selected[`opt_${i + 1}`] ? (
           <Selected
-            key={s}
-            value={s}
+            key={c}
+            value={c}
             onSelected={handleSelected}
             select={`opt_${i + 1}`}
           />
         ) : (
           <Unselected
-            key={s}
-            value={s}
+            key={c}
+            value={c}
             onSelected={handleSelected}
             select={`opt_${i + 1}`}
           />

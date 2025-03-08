@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import ToggleBtn from "../../common/toggle/ToggleBtn";
-import GridOptions from "./GridOptions";
-import Tab from "./Tab";
-import HeaderExplore from "./HeaderExplore";
-import { FilterMenuContext } from "../../../context/FilterMenuContext";
+import ToggleBtn from "../../common/toggle/ToggleBtn.jsx";
+import GridOptions from "./GridOptions.jsx";
+import Tab from "./Tab.jsx";
+import HeaderExplore from "./HeaderExplore.jsx";
+import { FilterMenuContext } from "../../../context/FilterMenuContext.jsx";
 import Search from "../../common/search/Search.jsx";
 import CommandIcon from "../../common/search/CommandIcon.jsx";
 

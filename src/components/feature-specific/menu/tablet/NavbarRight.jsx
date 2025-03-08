@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import {Theme} from "../Theme.jsx";
-import SearchIcon from "../../search/SearchIcon.jsx";
-import Search from "../../search/Search.jsx";
-import Button from "../../button/Button.jsx";
+import SearchIcon from "../../../common/search/SearchIcon.jsx";
+import Search from "../../../common/search/Search.jsx";
+import Button from "../../../common/button/Button.jsx";
 
 const NavbarRight = ({ onClickCart }) => {
     return (

@@ -1,4 +1,4 @@
-import { ItemBody, ItemImage } from "./";
+import { ItemBody, ItemImage } from "./index.js";
 
 export const Card = ({ asset, userName, price, itemName }) => {
   return (

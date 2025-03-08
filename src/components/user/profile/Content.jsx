@@ -1,4 +1,4 @@
-import { FilterItemsMenu } from "../../explore/filter";
+import { FilterItemsMenu } from "../../feature-specific/filter";
 import Card from "./Card";
 import { Tab } from "./Tab";
 

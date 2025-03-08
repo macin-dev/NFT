@@ -1,6 +1,6 @@
 import { ButtonContainer, RedRectangle, Title } from "./index.js";
-import FourImagesGrid from "../../../components/common/four-images/FourImagesGrid.jsx";
-import ImageItem from "../../../components/common/four-images/ImageItem.jsx";
+import FourImagesGrid from "../../../components/feature-specific/four-images/FourImagesGrid.jsx";
+import ImageItem from "../../../components/feature-specific/four-images/ImageItem.jsx";
 
 export const Banner = () => {
   return (

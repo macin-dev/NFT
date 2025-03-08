@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Blockchain, Category, Status, Price, Dropdown } from ".";
-import { Dbutton_active_lg } from "./dark/Dbutton_active_lg";
-import { Wbutton_active_lg } from "./white/Wbutton_active_lg";
+import { Blockchain, Category, Status, Price, Dropdown } from "./index.js";
+import Button from "../../common/button/Button.jsx";
+
+const filterButtons = {height: 48, paddingY: 12, paddingX: 20, fontSize: 14, borderRadius: 12}
 
 export const FilterItemsMenu = () => {
   const [dropdown, setDropdown] = useState({
@@ -63,8 +64,8 @@ export const FilterItemsMenu = () => {
 
       {window.innerWidth < 960 && (
         <div className="tablet:hidden flex flex-col gap-2 self-stretch">
-          <Wbutton_active_lg value="Clear" />
-          <Dbutton_active_lg value="Apply" />
+          <Button color="white" value="Clear" customSize={filterButtons} />
+          <Button color="black" value="Apply" customSize={filterButtons} />
         </div>
       )}
     </div>

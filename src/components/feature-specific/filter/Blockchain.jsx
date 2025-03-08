@@ -1,6 +1,6 @@
-import { typesOpt } from "./data";
-import { Selected, Unselected } from "../../global/filters";
-import { useDropdown } from "../hooks/useDropdown";
+import { typesOpt } from "./data.js";
+import { Selected, Unselected } from "../../global/filters/index.js";
+import { useDropdown } from "../../../hooks/useDropdown.js";
 
 export const Blockchain = () => {
   const { selected, handleSelected } = useDropdown({

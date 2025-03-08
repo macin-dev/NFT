@@ -1,5 +1,5 @@
-import ToggleBtn from "../../common/toggle/ToggleBtn";
-import { Price_input } from "./Price_input";
+import ToggleBtn from "../../common/toggle/ToggleBtn.jsx";
+import { Price_input } from "./Price_input.jsx";
 
 export const Price = () => {
   return (

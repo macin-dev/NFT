@@ -1,6 +1,6 @@
 import Button from "../../../components/common/button/Button.jsx";
 import ButtonIcon from "../../../components/common/button/ButtonIcon.jsx";
-import TrendingCardExample from "../../../components/common/trending-card-example/TrendingCardExample.jsx";
+import TrendingCardExample from "../../../components/feature-specific/trending-card-example/TrendingCardExample.jsx";
 
 
 export const CCard = () => {

@@ -1,3 +1,3 @@
-export * from "./ItemImage";
-export * from "./ItemBody";
-export * from "./Card";
+export * from "./ItemImage.jsx";
+export * from "./ItemBody.jsx";
+export * from "./Card.jsx";
