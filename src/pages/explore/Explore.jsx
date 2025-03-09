@@ -1,11 +1,11 @@
 import {useContext} from "react";
-import {useResize} from "../../../helper/useResize.js";
-import {usePreventScrolling} from "../../../helper/index.js";
-import { FilterMenuContext } from "../../../context/FilterMenuContext.jsx";
+import {useResize} from "../../helper/useResize.js";
+import {usePreventScrolling} from "../../helper/index.js";
+import { FilterMenuContext } from "../../context/FilterMenuContext.jsx";
 import GridView from "./GridView.jsx";
-import Filter from "../filter/Filter.jsx";
+import Filter from "../../components/feature-specific/filter/Filter.jsx";
 
-export const NFTSection = () => {
+const Explore = () => {
   const { filterMenu, onFilterMenu } = useContext(FilterMenuContext);
   const { documentSize } = useResize();
     const filterState = filterMenu && documentSize === "mobile";
@@ -18,3 +18,5 @@ export const NFTSection = () => {
     </div>
   );
 };
+
+export default Explore;

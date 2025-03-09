@@ -6,7 +6,7 @@ const tab_options = [
   { id: Math.random(), path: "users", value: "Users" },
 ];
 
-const Tab = () => {
+const Lists = () => {
   return (
     <nav className="w-full flex p-1 gap-[0.0625rem] self-stretch rounded-2xl bg-light-surface-soft desktop:w-auto">
       {tab_options.map((tab) => (
@@ -16,4 +16,4 @@ const Tab = () => {
   );
 };
 
-export default Tab;
+export default Lists;

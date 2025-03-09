@@ -8,7 +8,6 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { NFTSection } from "./components/feature-specific/nft/index.js";
 import { Wallet } from "./pages/login/login/index.js";
 import { Header } from "./components/collections/header/Header.jsx";
 import { Layout } from "./components/user/Layout.jsx";
@@ -17,8 +16,9 @@ import { Main } from "./pages/create/index.js";
 import { Profile } from "./pages/profile/Profile.jsx";
 import { UsersPage } from "./pages/users/index.js";
 import { Container } from "./components/collections/Container.jsx";
-import NavBarExplore from "./components/feature-specific/nft/NavBarExplore.jsx";
 import Home from "./pages/home/Home.jsx";
+import NavBarExplore from "./components/feature-specific/navbar-explore/NavBarExplore.jsx";
+import Explore from "./pages/explore/Explore.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="explore" element={<NavBarExplore />}>
           <Route index element={<Navigate replace to="art" />} />
-          <Route path="art" element={<NFTSection />} />
+          <Route path="art" element={<Explore />} />
           <Route path="collections" element={<Container />} />
           <Route path="users" element={<UsersPage />} />
         </Route>
