@@ -1,5 +1,4 @@
-export * from "./Data";
-export * from "./Group_1";
-export * from "./Group_2";
+export * from "./CollectionDetails.jsx";
+export * from "./CollectionData.jsx";
 export * from "./Collection";
 export * from "./Container";

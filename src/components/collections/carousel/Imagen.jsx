@@ -4,7 +4,7 @@ export const Imagen = ({ url }) => {
       <img
         className="w-full h-full tablet:object-cover tablet:h-[12.5rem] rounded-xl"
         src={url}
-        alt="Avatar card"
+        alt="CollectionAuthor card"
       />
     </div>
   );
