@@ -1,4 +1,4 @@
-import { Collection } from ".";
+import Collection from "./Collection.jsx";
 
 export const Container = () => {
   return (

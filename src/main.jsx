@@ -15,7 +15,7 @@ import { Details } from "./pages/details/Details.jsx";
 import { Main } from "./pages/create/index.js";
 import { Profile } from "./pages/profile/Profile.jsx";
 import { UsersPage } from "./pages/users/index.js";
-import { Container } from "./components/collections/Container.jsx";
+import { Container } from "./pages/collections/Container.jsx";
 import Home from "./pages/home/Home.jsx";
 import NavBarExplore from "./components/feature-specific/navbar-explore/NavBarExplore.jsx";
 import Explore from "./pages/explore/Explore.jsx";

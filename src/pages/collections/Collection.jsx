@@ -1,8 +1,8 @@
-import { EmblaCarousel } from "./carousel/EmblaCarousel";
-import CollectionAuthor from "../feature-specific/collection-author-profile/CollectionAuthor.jsx";
+import CollectionAuthor from "../../components/feature-specific/collection-author-profile/CollectionAuthor.jsx";
 import CollectionDetails from "./CollectionDetails.jsx";
+import EmblaCarousel from "../../components/feature-specific/collection-carousel/EmblaCarousel.jsx";
 
-export const Collection = () => {
+const Collection = () => {
   return (
     <section className="bg-white border-light-border border flex flex-col p-4 items-start gap-6 self-stretch rounded-2xl">
       <CollectionAuthor />
@@ -11,3 +11,5 @@ export const Collection = () => {
     </section>
   );
 };
+
+export default Collection;

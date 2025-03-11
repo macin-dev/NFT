@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
-import { Imagen } from "./Imagen";
+import { Imagen } from "./Imagen.jsx";
 
-export const EmblaCarousel = () => {
+const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ slidesToScroll: "auto" });
   return (
     <section className="embla-collection">
@@ -17,3 +17,5 @@ export const EmblaCarousel = () => {
     </section>
   );
 };
+
+export default EmblaCarousel;
