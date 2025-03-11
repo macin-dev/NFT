@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../../components/common/button/Button.jsx";
-import ButtonIcon from "../../components/common/button/ButtonIcon.jsx";
+import Button from "../../../components/common/button/Button.jsx";
+import ButtonIcon from "../../../components/common/button/ButtonIcon.jsx";
 
 const styles = {
   width: "fit-content",

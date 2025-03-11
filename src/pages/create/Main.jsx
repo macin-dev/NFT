@@ -1,5 +1,5 @@
 import { useContext, useReducer } from "react";
-import { Dropdown, InputText, TextArea } from "../../components/global/inputs";
+import { Dropdown, InputText, TextArea } from "../../components/common/inputs";
 import {
   Preview,
   Title,
@@ -9,11 +9,11 @@ import {
   Unlockable,
   PriceSelectionContainer,
 } from "./";
-import { InputSelect } from "../../components/global/inputs/InputSelect";
+import { InputSelect } from "../../components/common/inputs/InputSelect";
 import { chainIcons } from "./data";
-import { PreviewCard } from "../../components/global/nftcard";
 import { CollectionContext } from "../../context/CollectionProvider";
 import Button from "../../components/common/button/Button.jsx";
+import {PreviewCard} from "./Preview/PreviewCard.jsx";
 
 const initialState = {
   url: null,

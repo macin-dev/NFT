@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ActionButton from "../../../global/ActionButton.jsx";
+import ActionButton from "../../../common/action-button/ActionButton.jsx";
 
 const MenuButton = ({ menu, handleToggleMenu }) => {
   return (

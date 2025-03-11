@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CollectionContext } from "../../context/CollectionProvider.jsx";
-import NftCard from "../../components/global/nftcard/NftCard.jsx";
+import NftCard from "../../components/feature-specific/card-item-grid/NftCard.jsx";
 
 const GridView = () => {
   const { collections } = useContext(CollectionContext);

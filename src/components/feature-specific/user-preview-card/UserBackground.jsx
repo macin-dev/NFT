@@ -1,4 +1,4 @@
-import { UserPhoto } from "./UserPhoto";
+import { UserPhoto } from "./UserPhoto.jsx";
 
 export const UserBackground = ({ bgUrl, avatarUrl }) => {
   return (

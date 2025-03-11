@@ -1,4 +1,5 @@
-import { UserBackground, UserInfo } from "./";
+import {UserBackground} from "./UserBackground.jsx";
+import {UserInfo} from "./UserInfo.jsx";
 
 export const UserCard = ({ user, background, userID, username }) => {
   return (

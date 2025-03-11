@@ -1,5 +1,5 @@
-import { DefaultPreview } from "./DefaultPreview";
-import { RenderImage } from "./RenderImage";
+import { DefaultPreview } from "./DefaultPreview.jsx";
+import { RenderImage } from "./RenderImage.jsx";
 
 export const PreviewCard = ({ userName, text, price, fileURL }) => {
   return (
@@ -12,7 +12,7 @@ export const PreviewCard = ({ userName, text, price, fileURL }) => {
         <h3 className="text-light-element-secondary flex gap-1 text-[0.75rem] leading-4">
           <img
             className="w-4 h-4"
-            src="./assets/cards/verify.svg"
+            src="/assets/icons/verify.svg"
             alt="Verify Icon"
           />
           {userName}

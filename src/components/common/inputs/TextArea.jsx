@@ -1,4 +1,4 @@
-import { InputContainer } from "./";
+import { InputContainer } from "./index.js";
 
 export const TextArea = ({ dispatch, value }) => {
   return (

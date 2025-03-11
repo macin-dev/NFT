@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Container from "./Container.jsx";
 import MenuLogo from "./MenuLogo.jsx";
 import Search from "./Search.jsx";
-import ActionButton from "../../../global/ActionButton.jsx";
+import ActionButton from "../../../common/action-button/ActionButton.jsx";
 import Navbar from "../Navbar.jsx";
 import DisplayMobileMenu from "./DisplayMobileMenu.jsx";
 import MenuButton from "./MenuButton.jsx";

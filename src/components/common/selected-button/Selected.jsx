@@ -1,4 +1,4 @@
-import { Crypto_Icon } from "./Crypto_Icon";
+import { Crypto_Icon } from "./Crypto_Icon.jsx";
 
 export const Selected = ({ value, url, alt, onSelected, select }) => {
   return (

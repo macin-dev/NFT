@@ -1,5 +1,3 @@
-import { PreviewCard } from "../../components/global/nftcard";
-
 export const Preview = ({ children }) => {
   return (
     <div className="tablet:w-[17rem] flex flex-col items-start gap-4 desktop:w-[18.5rem]">
