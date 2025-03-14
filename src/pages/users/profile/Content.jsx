@@ -1,6 +1,6 @@
-import { FilterItemsMenu } from "../../feature-specific/filter";
-import Card from "./Card";
-import { Tab } from "./Tab";
+import { FilterItemsMenu } from "../../../components/feature-specific/filter/index.js";
+import Card from "./Card.jsx";
+import { Tab } from "./Tab.jsx";
 
 export const Content = ({ userVault, userName }) => {
   return (

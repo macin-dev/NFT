@@ -3,10 +3,14 @@ import { useState } from "react";
 export const useDropdown = ({ ...lists }) => {
   const [selected, setSelected] = useState(lists);
 
-  const handleSelected = (opt) => {
+  const handleSelected = (status) => {
     setSelected((prev) => ({
       ...prev,
-      [opt]: !selected[opt],
+      [status.name]: {
+        name: status.name,
+        type: status.type,
+        isActive: !status.isActive,
+      },
     }));
   };
 

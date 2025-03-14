@@ -6,7 +6,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/goat_gaming/item1.jpg",
     price: "0.1139",
-    blockchain: "ethereum",
+    blockchain: "bnbchain",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -81,7 +81,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/goat_gaming/item6.jpg",
     price: "0.114",
-    blockchain: "ethereum",
+    blockchain: "bnbchain",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -96,7 +96,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/valhalla/nft-vault-1.avif",
     price: "0.0685",
-    blockchain: "ethereum",
+    blockchain: "avalanche",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -111,7 +111,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/valhalla/nft-vault-2.avif",
     price: "0.3833",
-    blockchain: "ethereum",
+    blockchain: "avalancha",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -126,7 +126,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/valhalla/nft-vault-2.avif",
     price: "0.073",
-    blockchain: "ethereum",
+    blockchain: "bnbchain",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -141,7 +141,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/valhalla/nft-vault-4.avif",
     price: "0.092",
-    blockchain: "ethereum",
+    blockchain: "solana",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -156,7 +156,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/valhalla/nft-vault-5.avif",
     price: "0.0996",
-    blockchain: "ethereum",
+    blockchain: "solana",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -169,7 +169,7 @@ export const vault = [
     userName: "Ukutars",
     itemName: "#1443",
     asset:
-        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-1.avif",
+      "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-1.avif",
     price: "0.0685",
     blockchain: "ethereum",
     putOnMarketplace: true,
@@ -184,9 +184,9 @@ export const vault = [
     userName: "Ukutars",
     itemName: "#1183",
     asset:
-        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-2.avif",
+      "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-2.avif",
     price: "0.0685",
-    blockchain: "ethereum",
+    blockchain: "bnbchain",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -199,7 +199,7 @@ export const vault = [
     userName: "Ukutars",
     itemName: "#1946",
     asset:
-        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-3.avif",
+      "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-3.avif",
     price: "0.0685",
     blockchain: "ethereum",
     putOnMarketplace: true,
@@ -214,9 +214,9 @@ export const vault = [
     userName: "Ukutars",
     itemName: "#0098",
     asset:
-        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-4.avif",
+      "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-4.avif",
     price: "0.0685",
-    blockchain: "ethereum",
+    blockchain: "avalancha",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -229,7 +229,7 @@ export const vault = [
     userName: "Ukutars",
     itemName: "#9981",
     asset:
-        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-5.avif",
+      "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-5.avif",
     price: "0.0685",
     blockchain: "ethereum",
     putOnMarketplace: true,
@@ -244,9 +244,9 @@ export const vault = [
     userName: "Ukutars",
     itemName: "#7733",
     asset:
-        "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-6.avif",
+      "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-6.avif",
     price: "0.0685",
-    blockchain: "ethereum",
+    blockchain: "avalancha",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,

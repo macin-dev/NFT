@@ -1,9 +1,17 @@
 import { Crypto_Icon } from "./Crypto_Icon.jsx";
+import { useContext } from "react";
+import { CollectionContext } from "../../../context/CollectionProvider.jsx";
+import { vault } from "../../../../data/collections.js";
 
 export const Selected = ({ value, url, alt, onSelected, select }) => {
+  const { handleFilterItems } = useContext(CollectionContext);
+  const filterByBlockchain = () => {
+    // Data change
+    handleFilterItems(select);
+  };
   return (
     <button
-      onClick={() => onSelected(select)}
+      onClick={() => filterByBlockchain}
       className="bg-light-surface-soft h-12 p-3 flex items-center gap-3 shrink-0 rounded-xl"
     >
       {url && <Crypto_Icon url={url} alt={alt} />}

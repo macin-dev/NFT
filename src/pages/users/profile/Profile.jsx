@@ -1,5 +1,5 @@
-import { Image } from "./Image";
-import Button from "../../common/button/Button.jsx";
+import { Image } from "./Image.jsx";
+import Button from "../../../components/common/button/Button.jsx";
 
 export const Profile = ({ username, urlAvatar, bgURL }) => {
   return (

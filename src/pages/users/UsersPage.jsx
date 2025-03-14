@@ -1,5 +1,5 @@
-import { UserCard } from ".";
 import { users } from "../../../data/users";
+import {UserCard} from "../../components/feature-specific/user-preview-card/UserCard.jsx";
 
 export const UsersPage = () => {
   return (

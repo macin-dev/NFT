@@ -10,15 +10,15 @@ import {
 } from "react-router-dom";
 import { Wallet } from "./pages/login/login/index.js";
 import { Header } from "./components/collections/header/Header.jsx";
-import { Layout } from "./components/user/Layout.jsx";
+import { Layout } from "./pages/users/Layout.jsx";
 import { Details } from "./pages/details/Details.jsx";
 import { Main } from "./pages/create/index.js";
 import { Profile } from "./pages/profile/Profile.jsx";
-import { UsersPage } from "./pages/users/index.js";
 import { Container } from "./pages/collections/Container.jsx";
 import Home from "./pages/home/Home.jsx";
 import NavBarExplore from "./components/feature-specific/navbar-explore/NavBarExplore.jsx";
 import Explore from "./pages/explore/Explore.jsx";
+import {UsersPage} from "./pages/users/UsersPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

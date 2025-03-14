@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Content } from "./profile/Content";
-import { Profile } from "./profile/Profile";
-import { users } from "../../../data/users";
+import { Content } from "./profile/Content.jsx";
+import { Profile } from "./profile/Profile.jsx";
+import { users } from "../../../data/users.js";
 
 export const Layout = () => {
   const [userData, setUserData] = useState({});

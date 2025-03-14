@@ -1,4 +1,4 @@
-import ClassicTab from "../../common/tab/classic/ClassicTab";
+import ClassicTab from "../../../components/common/tab/classic/ClassicTab.jsx";
 
 export const Tab = () => {
   return (

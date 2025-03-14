@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../../../components/common/button/Button.jsx";
-import ButtonIcon from "../../../components/common/button/ButtonIcon.jsx";
+import Button from "../../common/button/Button.jsx";
+import ButtonIcon from "../../common/button/ButtonIcon.jsx";
 
 const styles = {
   width: "fit-content",
@@ -9,8 +9,7 @@ const styles = {
   borderRadius: 8,
   fontSize: 14,
   lineHeight: "20px",
-}
-
+};
 
 export const UserInfo = ({ userID, username }) => {
   return (

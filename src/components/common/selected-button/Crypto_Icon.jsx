@@ -1,7 +1,7 @@
-export const Crypto_Icon = ({ url, alt }) => {
+export const Crypto_Icon = ({ iconUrl, alt }) => {
   return (
     <div className="w-6 h-6">
-      <img src={url} alt={alt} />
+      <img src={iconUrl} alt={alt} />
     </div>
   );
 };
