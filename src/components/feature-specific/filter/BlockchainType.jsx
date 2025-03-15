@@ -12,7 +12,7 @@ const BlockchainType = ({ value, iconUrl, status, onFilterByBlockchain }) => {
         isActive ? "bg-light-surface-soft" : "bg-white"
       } h-12 p-3 flex items-center gap-3 rounded-xl`}
     >
-      <Crypto_Icon iconUrl={iconUrl} alt="Check Icon" />
+      {iconUrl ? <Crypto_Icon iconUrl={iconUrl} alt="Check Icon" /> : null}
       <BlockchainText value={value} isActive={isActive} />
       {isActive ? <BlockchainActive /> : null}
     </button>
