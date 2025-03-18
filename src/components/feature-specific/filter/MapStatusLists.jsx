@@ -1,6 +1,6 @@
 import { useDropdown } from "../../../hooks/useDropdown";
 import BlockchainType from "./BlockchainType";
-import { statusOpt } from "./data";
+import { statusOpt } from "../../../../data/data";
 
 const MapStatusLists = () => {
   const { selected, handleSelected } = useDropdown({

@@ -111,7 +111,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/valhalla/nft-vault-2.avif",
     price: "0.3833",
-    blockchain: "avalancha",
+    blockchain: "avalanche",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -216,7 +216,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-4.avif",
     price: "0.0685",
-    blockchain: "avalancha",
+    blockchain: "avalanche",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,
@@ -246,7 +246,7 @@ export const vault = [
     asset:
       "https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/explore/akutars/nft-6.avif",
     price: "0.0685",
-    blockchain: "avalancha",
+    blockchain: "avalanche",
     putOnMarketplace: true,
     optionPrice: {
       fixed: true,

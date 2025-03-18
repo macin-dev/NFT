@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { CollectionContext } from "../../../context/CollectionProvider";
 import { useDropdown } from "../../../hooks/useDropdown";
 import BlockchainType from "./BlockchainType";
-import { typesOpt } from "./data";
+import { typesOpt } from "../../../../data/data";
 
 const MapBlockchainLists = () => {
+  const { handleFilterItemsBy } = useContext(CollectionContext);
   const { selected, handleSelected } = useDropdown({
     opt_1: {
       name: "opt_1",
@@ -26,8 +29,9 @@ const MapBlockchainLists = () => {
     },
   });
 
-  const hadleFilterByBlockchain = (blockchainOption) => {
-    handleSelected(blockchainOption);
+  const hadleFilterByBlockchain = (blockchainType) => {
+    handleSelected(blockchainType);
+    handleFilterItemsBy(blockchainType);
   };
 
   return (
