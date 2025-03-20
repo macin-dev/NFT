@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --linear-gradiant: linear-gradient(180deg, rgb(0, 0, 0, 0) 50%, rgb(0, 0, 0, 0.7) 100%);
-  --lightgray-50: rgba(211,211,211,0.5);
+:root {
+  --linear-gradiant: linear-gradient(
+    180deg,
+    rgb(0, 0, 0, 0) 50%,
+    rgb(0, 0, 0, 0.7) 100%
+  );
+  --lightgray-50: rgba(211, 211, 211, 0.5);
 }
 
 * {
@@ -119,9 +123,8 @@ body {
 }
 
 .slide-1 {
-  background-image:
-          var(--linear-gradiant),
-          url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-1.png");
+  background-image: var(--linear-gradiant),
+    url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-1.png");
   background-color: var(--lightgray-50);
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,9 +132,8 @@ body {
 }
 
 .slide-2 {
-  background-image:
-          var(--linear-gradiant),
-url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-2.png");
+  background-image: var(--linear-gradiant),
+    url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-2.png");
   background-color: var(--lightgray-50);
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,9 +141,8 @@ url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepag
 }
 
 .slide-3 {
-  background-image:
-          var(--linear-gradiant),
-url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-3.png");
+  background-image: var(--linear-gradiant),
+    url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-3.png");
   background-color: var(--lightgray-50);
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,9 +150,8 @@ url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepag
 }
 
 .slide-4 {
-  background-image:
-          var(--linear-gradiant),
-url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-4.png");
+  background-image: var(--linear-gradiant),
+    url("https://nft-items-vault.s3.us-east-1.amazonaws.com/Ultrarare+assets/homepage/slide-bg-4.png");
   background-color: var(--lightgray-50);
   background-repeat: no-repeat;
   background-size: cover;
