@@ -16,15 +16,31 @@ export function CollectionProvider({ children }) {
     setFilterBy((prev) => ({ ...prev, [type]: { isActive: !isActive } }));
   };
 
+  console.log("re-render");
+
   // API CALL SIMULATION
   useEffect(() => {
     if (!filterBy) return;
     // Filter NFT by Blockchain type
-    const filteredData = vault.filter(
-      (item) => filterBy[item.blockchain] && filterBy[item.blockchain].isActive
-    );
-    // Set new values
-    setCollections(filteredData);
+    let noResults = null;
+    const filteredData = vault.filter((item) => {
+      if (filterBy[item.blockchain] && filterBy[item.blockchain].isActive) {
+        noResults = true;
+        return item;
+      }
+    });
+
+    // If values matched, re-render filtered collections
+    if (filteredData.length > 0) {
+      // Set new values
+      setCollections(filteredData);
+    } else if (noResults) {
+      console.log("no results were found :(");
+    } else {
+      // if not matches, set the default state
+      setCollections(vault);
+      setFilterBy(null);
+    }
   }, [filterBy]);
 
   return (
